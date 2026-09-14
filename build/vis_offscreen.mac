@@ -1,0 +1,37 @@
+/run/initialize
+
+# Use offscreen rendering
+/vis/open TSG_OFFSCREEN 600x600
+
+# Draw geometry
+/vis/drawVolume
+
+# Set viewing angle
+/vis/viewer/set/viewpointVector 1 1 1
+/vis/viewer/set/upVector  0 0 1
+#/vis/viewer/set/rotationStyle freeRotation
+/vis/viewer/set/background 1 1 1
+
+# Enable trajectory storage
+/tracking/storeTrajectory 2
+
+# Add trajectories
+/vis/scene/add/trajectories smooth
+
+# Color by particle type
+/vis/modeling/trajectories/create/drawByParticleID
+/vis/modeling/trajectories/drawByParticleID-0/set mu- blue
+/vis/modeling/trajectories/drawByParticleID-0/set mu+ yellow
+/vis/modeling/trajectories/drawByParticleID-0/set e- green
+/vis/modeling/trajectories/drawByParticleID-0/set e+ red
+/vis/modeling/trajectories/drawByParticleID-0/set gamma cyan
+
+# Accumulate events
+/vis/scene/endOfEventAction accumulate 200
+
+# Run events
+/run/beamOn 100
+
+# Refresh viewer
+/vis/viewer/refresh
+

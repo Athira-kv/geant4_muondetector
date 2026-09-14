@@ -1,0 +1,9 @@
+/run/initialize
+
+# High verbosity for debugging
+/run/verbose 2
+/event/verbose 1
+/tracking/verbose 1
+
+# Run just a few events
+/run/beamOn 5

@@ -1,0 +1,17 @@
+# Batch mode macro for cosmic muon simulation
+# This runs the simulation without visualization
+
+# Initialize geometry and physics
+/run/initialize
+
+# Set verbosity levels
+/run/verbose 1
+/event/verbose 0
+/tracking/verbose 0
+
+# Optional: Set random seed for reproducibility
+# /random/setSeeds 12345 67890
+
+# Run the simulation
+# Adjust the number based on statistics you need
+/run/beamOn 1000

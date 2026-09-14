@@ -1,0 +1,7 @@
+/run/initialize
+/run/verbose 1
+/event/verbose 1
+/tracking/verbose 1
+
+# Run just 10 events to test
+/run/beamOn 1

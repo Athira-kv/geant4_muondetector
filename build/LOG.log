@@ -1,0 +1,46 @@
+Starting analysis at Wed Feb 11 09:07:10 CST 2026
+Running muon_resolution_chunked.py...
+/u/athirak2/geant4-v11.2.2/examples/basic/CosmicMuonDetector/build/analyze_flux.py:94: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+Processing flux_DCsep_10cm.csv
+file flux_DCsep_10cm.csv  counts =  273
+Processing flux_DCsep_20cm.csv
+file flux_DCsep_20cm.csv  counts =  252
+Processing flux_DCsep_2cm.csv
+file flux_DCsep_2cm.csv  counts =  303
+Processing flux_DCsep_30cm.csv
+file flux_DCsep_30cm.csv  counts =  233
+Processing flux_DCsep_3cm.csv
+file flux_DCsep_3cm.csv  counts =  301
+Processing flux_DCsep_40cm.csv
+file flux_DCsep_40cm.csv  counts =  230
+Processing flux_DCsep_50cm.csv
+file flux_DCsep_50cm.csv  counts =  195
+Processing flux_DCsep_6cm.csv
+file flux_DCsep_6cm.csv  counts =  280
+separations [10. 20.  2. 30.  3. 40. 50.  6.]
+muon flux [273 252 303 233 301 230 195 280]
+/u/athirak2/geant4-v11.2.2/examples/basic/CosmicMuonDetector/build/plot_spectrum.py:84: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+/u/athirak2/geant4-v11.2.2/examples/basic/CosmicMuonDetector/build/plot_spectrum.py:89: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+/u/athirak2/geant4-v11.2.2/examples/basic/CosmicMuonDetector/build/plot_spectrum.py:93: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+=== Raw Hit Data Analysis ===
+
+Filtering for PRIMARY MUONS only (no secondaries)...
+Total hits: 4429640
+Primary muon hits: 1399196
+
+
+=== All Volume Names Hit ===
+detector_name
+Scintillator1    3155045
+Scintillator2    1200348
+Scintillator3      40076
+DriftChamber1      18047
+DriftChamber2      12076
+DriftChamber3       2203
+DriftChamber4       1845
+Name: count, dtype: int64
+All analysis completed at Wed Feb 11 09:08:19 CST 2026

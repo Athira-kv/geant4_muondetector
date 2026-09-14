@@ -1,0 +1,104 @@
+/run/initialize
+
+# ============================================================
+# Offscreen Visualization for Muon Tomography Setup
+# Similar to Figure 1 in Yang et al. "Novel muon imaging techniques"
+# ============================================================
+
+# Use offscreen rendering (higher resolution)
+/vis/open TSG_OFFSCREEN 1200x900
+
+# Draw geometry
+/vis/drawVolume
+
+# ============================================================
+# VIEW SETTINGS - Isometric view like Figure 1
+# ============================================================
+
+# Set viewing angle (isometric from front-top-right)
+/vis/viewer/set/viewpointThetaPhi 60 30
+/vis/viewer/set/upVector 0 0 1
+
+# Zoom to fit detector nicely
+/vis/viewer/zoomTo 1.5
+
+# Set target point (center of interest)
+/vis/viewer/set/targetPoint 0 0 0 m
+
+# ============================================================
+# RENDERING STYLE
+# ============================================================
+
+# Use surface rendering for solid appearance
+/vis/viewer/set/style surface
+
+# Enable hidden line removal for cleaner look
+/vis/viewer/set/hiddenEdge true
+/vis/viewer/set/hiddenMarker true
+
+# Set auxiliary edges visible
+/vis/viewer/set/auxiliaryEdge true
+
+# Set line width for edges
+/vis/viewer/set/lineWidth 1
+
+# ============================================================
+# BACKGROUND AND LIGHTING
+# ============================================================
+
+# White background (like paper figures)
+/vis/viewer/set/background white
+
+# Set default colors visible on white background
+/vis/viewer/set/defaultColour black
+
+# Enable lighting for 3D effect
+/vis/viewer/set/lightsMove cam
+/vis/viewer/set/lightsThetaPhi 60 45
+
+# ============================================================
+# TRAJECTORY DISPLAY
+# ============================================================
+
+# Enable trajectory storage
+/tracking/storeTrajectory 2
+
+# Add trajectories
+/vis/scene/add/trajectories smooth
+
+# Color by particle type
+/vis/modeling/trajectories/create/drawByParticleID
+/vis/modeling/trajectories/drawByParticleID-0/set mu- red
+/vis/modeling/trajectories/drawByParticleID-0/set mu+ blue
+/vis/modeling/trajectories/drawByParticleID-0/set e- green
+/vis/modeling/trajectories/drawByParticleID-0/set e+ cyan
+/vis/modeling/trajectories/drawByParticleID-0/set gamma yellow
+
+# ============================================================
+# ADDITIONAL SCENE ELEMENTS
+# ============================================================
+
+# Add coordinate axes
+/vis/scene/add/axes 0 0 0 20 cm
+
+# Add scale bar
+/vis/scene/add/scale 10 cm
+
+# Add event ID text
+/vis/scene/add/eventID
+
+# ============================================================
+# RUN AND EXPORT
+# ============================================================
+
+# Accumulate events
+/vis/scene/endOfEventAction accumulate 200
+
+# Run events
+/run/beamOn 100
+
+# Refresh viewer
+/vis/viewer/refresh
+
+# Export image (uncomment desired format)
+# /vis/tsg/export muon_tomo_setup.png

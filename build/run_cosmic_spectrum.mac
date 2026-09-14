@@ -1,0 +1,10 @@
+/run/initialize
+
+# No need to set energy/direction - handled by generator
+# Just run events
+/run/verbose 1
+/event/verbose 0
+/tracking/verbose 0
+
+# Run many events to sample spectrum
+/run/beamOn 10000000

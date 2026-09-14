@@ -1,0 +1,36 @@
+c
+     Data file for   U-234 decay chain - atomic wt is 234.0409
+c    =========================================================
+c
+c    Parent gamma rays
+c    -----------------
+
+     There are    9 parent gamma rays or X-rays
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+       53.23        0.119     0.010
+      120.912       0.041     0.004
+      454.97        2.6E-05   0.3E-05
+      503.53        1.E-06    0.5E-06    intensity approximate
+      508.20        1.47E-05  0.17E-05
+      581.78        1.2E-05   0.5E-05
+      624.44        8.E-07    4.0E-07    intensity approximate
+      677.67        1.E-06    0.5E-06    intensity approximate
+      740.          3.E-06    3.E-06     intensity upper limit
+c    -----------------------------------------------------------
+c    Systematic uncertainty:   0.0 percent
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has  1 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+       U-234   U234.GAM     NO_FILE     7.74400E+12   0.24   Alpha  1.000      0.0    Y
+      Th-230   TH230.GAM    NO_FILE     2.37900E+12   0.40   Alpha  1.000      0.0    Y

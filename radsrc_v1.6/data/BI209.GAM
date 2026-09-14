@@ -1,0 +1,26 @@
+c
+     Data file for  Bi-209 decay chain - atomic wt is 208.9803
+c    =========================================================
+c
+c    Parent gamma rays
+c    -----------------
+
+     There are     0 parent gamma rays or X-rays
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+c    -----------------------------------------------------------
+c    Systematic uncertainty:   0.0 percent
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has   1 branch ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    1 members -----
+      Bi-209   BI209.GAM    NO_FILE     0.00000E+00   0.00   Stable 0.0        0.0    Y

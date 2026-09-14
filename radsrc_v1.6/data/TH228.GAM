@@ -1,0 +1,41 @@
+c
+     Data file for  Th-228 decay chain - atomic wt is 228.0287
+c    =========================================================
+c
+c    Parent gamma rays
+c    -----------------
+
+     There are    14 parent gamma rays or X-rays in the beta branch
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+       10.622       0.18      0.04       Ra Ll
+       12.325       3.1       0.7        Ra La
+       13.662       0.094     0.020      Ra Ln
+       15.230       4.7       1.0        Ra Lb
+       17.952       1.06      0.23       Ra Lg
+       84.26        1.21      0.0        reference intensity?
+       85.429       0.0175    0.0011     Ra Ka2
+       88.471       0.0288    0.0019     Ra Ka1
+       99.915       0.0103    0.0007     Ra Kb1'
+      103.341       0.00336   0.00023    Ra Kb2'
+      131.50        0.128     0.014
+      166.43        0.082     0.011
+      205.75        0.028     0.007
+      215.75        0.277     0.007
+c    -----------------------------------------------------------
+c    Systematic uncertainty:   5.0 percent
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has   1 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+      Th-228   TH228.GAM    NO_FILE     6.03700E+07   0.10   Alpha  1.000      0.0    Y
+      Ra-224   RA224.GAM    NO_FILE     3.16200E+05   1.09   Alpha  1.000      0.0    Y

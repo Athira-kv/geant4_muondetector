@@ -1,0 +1,73 @@
+c
+     Data file for  Th-229 decay chain - atomic wt is 229.0318
+c    =========================================================
+c
+c    Parent gamma rays
+c    -----------------
+
+     There are    46 parent gamma rays or X-rays
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+       17.349       0.17      0.09       intensity approximate
+       25.373       0.036    0.018       intensity approximate
+       30.28        0.0       0.0        intensity unknown
+       31.37        4.1       0.8
+       37.78        0.0       0.0        intensity unknown
+       42.722       0.16      0.08       intensity approximate
+       53.18        0.0       0.0        intensity unknown
+       56.58        0.33      0.17       intensity approximate
+       68.14        0.10      0.05       intensity approximate
+       68.88        0.11      0.06       intensity approximate
+       75.17        0.5       0.3        intensity approximate
+       75.28        0.0       0.0        intensity unknown
+       86.23        0.38      0.19       intensity approximate
+       86.44        3.        2.         intensity approximate
+      107.16        0.8       0.4        intensity approximate
+      124.51        1.        0.5        intensity approximate
+      124.72        0.6       0.3        intensity approximate
+      131.92        0.33      0.17       intensity approximate
+      132.58        0.0       0.0        intensity unknown
+      134.78        0.0       0.0        intensity unknown
+      135.69        0.0       0.0        intensity unknown
+      137.02        1.6       0.3
+      140.28        0.0       0.0        intensity unknown
+      142.98        0.43      0.22       intensity approximate
+      147.78        0.0       0.0        intensity unknown
+      148.37        1.        0.5        intensity approximate
+      150.2         0.0       0.0        intensity unknown
+      151.29        0.0       0.0        intensity unknown
+      154.37        0.7       0.4        intensity approximate
+      156.46        1.        0.5        intensity approximate
+      158.50        0.0       0.0        intensity unknown
+      161.6         0.0       0.0        intensity unknown
+      165.7         0.0       0.0        intensity unknown
+      172.90        0.22      0.11       intensity approximate
+      179.74        0.51      0.26       intensity approximate
+      183.96        0.23      0.12       intensity approximate
+      190.18        0.0       0.0        intensity unknown
+      193.59        4.6       0.9
+      204.9         0.0       0.0        intensity unknown
+      210.94        3.3       0.7
+      218.15        0.14      0.07       intensity approximate
+      236.32        0.036     0.018      intensity approximate
+      242.69        0.0       0.0        intensity unknown
+      243.53        0.0       0.0        intensity unknown
+      261.0         0.0       0.0        intensity unknown
+      290.0         0.0       0.0        intensity unknown
+c    -----------------------------------------------------------
+c    Systematic uncertainty:   0.0 percent
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has   1 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+      Th-229   TH229.GAM    NO_FILE     2.31600E+11   2.18   Alpha  1.0        0.0    Y
+      Ra-225   RA225.GAM    NO_FILE     1.27900E+06   1.35   Beta   1.0        0.0    Y

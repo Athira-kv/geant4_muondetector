@@ -1,0 +1,31 @@
+c
+     Data file for  Pu-241 decay chain - atomic wt is 241.0568
+c    =========================================================
+c
+c    Parent gamma rays - Primary (beta) decay branch
+c    -----------------------------------------------
+
+     There are     0 parent gamma rays or X-rays
+c
+c    keV         Gamma (%)    +/-       Comment
+c    ----------  ---------  ----------   -----------------------
+c    -----------------------------------------------------------
+c    Systematic uncertainty:   0.0 percent
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has   2 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+      Pu-241   PU241A.GAM   NO_FILE     4.54400E+08   1.39   Alpha  0.0000241  1.66   Y
+       U-237   U237.GAM     NO_FILE     5.83200E+05   0.15   Beta   1.0        0.0    Y
+c
+     Branch 2:    2 members -----
+      Pu-241   PU241B.GAM   NO_FILE     4.54400E+08   1.39   Beta   0.9999759  0.0    Y
+      Am-241   AM241.GAM    NO_FILE     1.36600E+10   0.12   Alpha  1.0        0.0    Y

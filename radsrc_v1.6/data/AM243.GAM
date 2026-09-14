@@ -1,0 +1,44 @@
+c
+     Data file for  Am-243 decay chain - atomic wt is 243.0614
+c    =========================================================
+c
+c    Parent gamma rays
+c    -----------------
+c
+     There are    17 parent gamma rays or X-rays
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+       31.136       0.066     0.006
+       43.03        0.058     0.012
+       43.537       5.10      0.22
+       50.8         0.0026    0.0005
+       55.40        0.0092    0.0018
+       74.672      60.0       1.2
+       86.57        0.30      0.03
+       98.43        0.008     0.004      intensity approximate
+      117.70        0.55      0.07
+      141.97        0.114     0.012
+      170.14        0.00120   0.00024
+      195.3         0.00084   0.00017
+      220.0         0.0       0.0        intensity unknown
+      544.55        1.7E-05   0.4E-05
+      587.579       0.0       0.0        intensity unknown
+      631.116       0.00033   0.00005
+      662.251       0.00095   0.00015
+c    -----------------------------------------------------------
+c    Systematic uncertainty:  10.0 percent
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has  1 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+      Am-243   AM243.GAM    NO_FILE     2.32900E+11   0.55   Alpha  1.000      0.0    Y
+      Np-239   NP239.GAM    NO_FILE     2.03470E+05   0.17   Beta   1.000      0.0    Y

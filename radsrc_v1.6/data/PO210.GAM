@@ -1,0 +1,28 @@
+c
+     Data file for  Po-210 decay chain - atomic wt is 209.9828
+c    =========================================================
+c
+c    Parent gamma rays
+c    -----------------
+
+     There are     1 parent gamma rays or X-rays
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+      803.13        0.00106   0.00002
+c    -----------------------------------------------------------
+     Systematic uncertainty:   0.0 percent
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has   1 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+      Po-210   PO210.GAM    NO_FILE     1.19557E+07   0.001  Alpha  1.000      0.0    Y
+      Pb-206   PB206.GAM    NO_FILE     0.00000E+00   0.0    Stable 1.000      0.0    Y

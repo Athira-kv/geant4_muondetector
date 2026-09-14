@@ -1,0 +1,45 @@
+c
+     Data file for  Bi-213 decay chain - atomic wt is 212.9944
+c    =========================================================
+c
+c    Parent gamma rays - Primary (beta) decay branch
+c    -----------------------------------------------
+
+     There are    14 parent gamma rays or X-rays
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+        9.658       0.0258    0.0024     Po Ll
+       11.119       0.495     0.025      Po La 
+       12.085       0.0067    0.0004     Po Ln
+       13.504       0.46      0.03       Po Lb
+       15.878       0.088     0.008      Po Lg
+       76.858       0.78      0.03       Po Ka2
+       79.290       1.29      0.05       Po Ka1
+       89.639       0.459     0.017      Po Kb1'
+       92.673       0.140     0.006      Po Kb2'
+      292.79        0.44      0.06
+      440.34       16.5       0.4
+      659.72        0.087     0.008
+      807.27        0.261     0.008
+     1100.06        0.282     0.012
+c    -----------------------------------------------------------
+c    Systematic uncertainty:   6.6 percent for beta decay
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has   2 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+      Bi-213   BI213A.GAM   NO_FILE     2.73500E+03   0.13   Alpha  0.0216     6.0    Y
+      Tl-209   TL209.GAM    NO_FILE     1.32000E+02   3.18   Beta   1.0        0.0    Y
+c
+     Branch 2:    2 members -----
+      Bi-213   BI213B.GAM   NO_FILE     2.73500E+03   0.13   Beta   0.9784     0.13   Y
+      Po-213   PO213.GAM    NO_FILE     4.20000E-06  19.05   Alpha  1.0        0.0    Y

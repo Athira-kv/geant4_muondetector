@@ -1,0 +1,27 @@
+c
+     Data file for  Bk-249 decay chain - atomic wt is 249.0750
+c    =========================================================
+c
+c    Parent gamma rays - Secondary (alpha) decay branch
+c    --------------------------------------------------
+
+     There are     8 parent gamma rays or X-rays in the alpha branch
+c
+c    keV         Gamma (%)    +/-      Comment
+c    ----------  ---------  ---------  -----------------------
+      102.026      4.4E-06    1.1E-06  Am Ka2
+      105.472      6.9E-06    1.8E-06  Am Ka1
+      119.960      2.6E-06    0.7E-06  Am Kb1'
+      124.123      8.8E-07    2.3E-07  Am Kb2'
+      280.430      8.7E-07    1.7E-07
+      299.48        1.E-08    0.5E-08  intensity approximate
+      308.320      3.3E-06    0.5E-06
+      327.525      1.72E-05   0.24E-05
+c    -----------------------------------------------------------
+c    Systematic uncertainty:   5.5 percent for alpha decay
+c
+c
+c    Decay chain and daughter information is contained in the
+c    --------------------------------------------------------
+c    Primary decay mode file:  BK249B.GAM
+c    ------------------------------------

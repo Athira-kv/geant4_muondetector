@@ -1,0 +1,26 @@
+c
+     Data file for  Pb-207 decay chain - atomic wt is 206.9759
+c    =========================================================
+c
+c    Parent gamma rays
+c    -----------------
+c
+     There are     0 parent gamma rays or X-rays
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   ----------------------------
+c    ----------------------------------------------------------------
+     Systematic uncertainty:   0.0 percent
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has   1 branch ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    1 members -----
+      Pb-207   PB207.GAM    NO_FILE     0.00000E+00   0.0    Stable 1.000      0.0    Y

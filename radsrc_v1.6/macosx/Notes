@@ -1,0 +1,30 @@
+Can also implement mode in unix to use input file for part of input
+and continue interactively:
+
+#....if the user specified a file, cat it to the program
+#
+#    I use a pipe instead of <file, because the user can
+#    choose to enter 'filename -', this will cat the file
+#    and let the user continue to type via standard input.
+#    Note that if the user does use this feature (-) an
+#    extra carriage return is expected at the end of 
+#    
+
+echo
+echo -n "Enter input file name [or hit return for interactive mode] "
+read file
+echo
+[ "$file" ] && file="cat $file |"
+eval $file bin/radsrc
+
+Documentation:
+You can chose to read in your entire setup from a text file by entering the
+file name at the prompt. If you want to read in only part of the setup and then
+continue interactively type the filename an append the '-' after a space, e.g.,
+   
+  partial_input_filename -
+
+#....user may have set terminal to automatically close window
+#    so keep shell from exiting until user provides input
+#    (could use "defaults" command to check the terminal preference setting)
+#    (settings is found here terminal:preferences:settings:shell)

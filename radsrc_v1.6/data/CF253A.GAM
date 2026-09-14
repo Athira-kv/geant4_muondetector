@@ -1,0 +1,19 @@
+c
+     Data file for  Cf-253 decay chain - atomic wt is 253.0851
+c    =========================================================
+c
+c    Parent gamma rays - Secondary (alpha) decay branch
+c    --------------------------------------------------
+
+     There are     0 parent gamma rays or X-rays in the alpha branch
+c
+c    keV         Gamma (%)    +/-      Comment
+c    ----------  ---------  ---------  -----------------------
+c    -----------------------------------------------------------
+c    Systematic uncertainty:   0.0 percent for alpha decay
+c
+c
+c    Decay chain and daughter information is contained in the
+c    --------------------------------------------------------
+c    Primary decay mode file:  CF253B.GAM
+c    ------------------------------------

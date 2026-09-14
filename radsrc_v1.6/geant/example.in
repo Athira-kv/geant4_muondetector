@@ -1,0 +1,7 @@
+/radsrc/input U235 50.0
+/radsrc/input U238 50.0
+/radsrc/input AGE 15
+/radsrc/update
+
+/run/beamOn 10000
+# exit

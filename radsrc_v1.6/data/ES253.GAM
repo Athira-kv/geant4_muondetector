@@ -1,0 +1,99 @@
+c
+     Data file for  Es-253 decay chain - atomic wt is 253.0848
+c    =========================================================
+c
+c    Parent gamma rays
+c    -----------------
+
+     There are    72 parent gamma rays
+c
+c    keV         Gamma (%)    +/-      Comment
+c    ----------  ---------  ---------  -----------------------
+       30.87       0.007      0.004    intensity approximate
+       41.80       0.050      0.025    intensity approximate
+       42.985      0.009      0.005    intensity approximate
+       51.958      0.0048     0.0024   intensity approximate
+       55.12       0.0019     0.0010   intensity approximate
+       62.09       0.0010     0.0005   intensity approximate
+       66.86       0.0010     0.0005   intensity approximate
+       73.42       0.0008     0.0008   intensity upper limit
+       73.85       0.0008     0.0004   intensity approximate
+       78.58       0.00028    0.00014  intensity approximate
+       93.76       0.0007     0.0004   intensity approximate
+       98.10       0.00097    0.00019
+      114.05       0.0006     0.0003   intensity approximate
+      121.97       0.0007     0.0004   intensity approximate
+      135.52       0.00015    0.00008  intensity approximate
+      136.88       4.6E-05    0.7E-05
+      145.44       0.00028    0.00003
+      158.63       1.4E-07    0.3E-07
+      162.79       1.E-05     0.5E-05  intensity approximate
+      168.3        5.E-05     2.5E-05  intensity approximate
+      168.91       2.6E-06    0.4E-06
+      180.54       2.3E-05    0.4E-05
+      191.60       4.8E-07    1.0E-07
+      283.4        6.9E-06    1.4E-06
+      291.21       3.5E-05    0.4E-05
+      306.57       2.7E-05    0.3E-05
+      312.70       4.E-06     2.E-06   intensity approximate
+      319.05       3.7E-05    0.4E-05
+      335.18       0.000149   0.000015
+      337.17       5.4E-05    0.5E-05
+      346.33       0.000172   0.000017
+      347.38       0.00018    0.00002
+      349.55       0.000140   0.000015
+      368.3        0.00015    0.00008  intensity approximate
+      368.79       0.00017    0.00009  intensity approximate
+      380.42       0.00038    0.00012
+      381.14       0.0056     0.0005
+      386.12       0.0013     0.0005
+      387.14       0.0181     0.0018
+      389.18       0.0264     0.0005
+      392.28       0.00013    0.00007  intensity approximate
+      404.25       5.6E-06    0.6E-06
+      421.21       0.000106   0.000021
+      425.2        0.00024    0.00005
+      428.94       0.0060     0.0006
+      433.10       0.0029     0.0003
+      441.7        8.5E-05    0.8E-05
+      448.22       0.00069    0.00007
+      468.8        8.7E-05    1.7E-05
+      474.89       0.00035    0.00004
+      475.48       8.4E-06    1.8E-06
+      477.1        0.000120   0.000024
+      500.18       0.000168   0.000020
+      503.8        2.0E-05    0.2E-05
+      514.4        7.0E-06    1.4E-06
+      518.46       0.000104   0.000013
+      523.9        5.7E-05    1.1E-05
+      529.52       3.3E-07    0.8E-07
+      541.97       2.4E-05    0.3E-05
+      549.33       3.4E-05    0.5E-05
+      560.39       4.0E-05    0.8E-05
+      566.9        5.1E-05    1.0E-05
+      585.3        3.7E-05    0.7E-05
+      616.1        4.2E-06    0.8E-06
+      663.8        3.5E-06    0.7E-06
+      768.2        2.9E-05    0.6E-05
+      900.2        8.3E-06    1.7E-06
+      932.2        4.6E-05    0.9E-05
+      946.3        7.6E-06    1.5E-06
+     1040.4        2.8E-06    0.6E-06
+     1075.         5.2E-06    1.0E-06
+     1106.4        1.4E-06    0.3E-06
+c    -----------------------------------------------------------
+c    Systematic uncertainty:  10.0 percent
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has  1 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+      Es-253   ES253.GAM    NO_FILE     1.76300E+06   0.49   Alpha  1.0        0.0    Y
+      Bk-249   BK249A.GAM   NO_FILE     2.76500E+07   1.88   Alpha  0.0000145  5.52   Y

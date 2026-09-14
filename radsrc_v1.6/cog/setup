@@ -1,0 +1,7 @@
+# source setup
+#
+# Execute the correct setup script
+#
+make -C .. setup
+source ../setup
+source ./setup.`basename $SHELL | grep -q c && echo c`sh

@@ -1,0 +1,31 @@
+c
+     Data file for  Cf-253 decay chain - atomic wt is 253.0851
+c    =========================================================
+c
+c    Parent gamma rays - Primary (beta) decay branch
+c    -----------------------------------------------
+
+     There are     0 parent gamma rays or X-rays in the beta branch
+c
+c    keV         Gamma (%)    +/-      Comment
+c    ----------  ---------  ---------  -----------------------
+c    -----------------------------------------------------------
+c    Systematic uncertainty:   0.0 percent for beta decay
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has  2 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+      Cf-253   CF253A.GAM   NO_FILE     1.53900E+06   0.45   Alpha  0.0031    12.9    Y
+      Cm-249   CM249.GAM    NO_FILE     3.84910E+O3   0.05   Beta   1.0        0.0    Y
+c
+     Branch 2:    2 members -----
+      Cf-253   CF253B.GAM   NO_FILE     1.53900E+06   0.45   Beta   0.9969     0.04   Y
+      Es-253   ES253.GAM    NO_FILE     1.76300E+06   0.49   Alpha  1.0        0.0    Y

@@ -1,0 +1,38 @@
+c
+     Data file for  Pu-241 decay chain - atomic wt is 241.0568
+c    =========================================================
+c
+c    Parent gamma rays - Secondary (alpha) decay branch
+c    --------------------------------------------------
+
+     There are    19 parent gamma rays and X-rays
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+       38.57       9.6E-06    1.9E-06 
+       44.20       4.18E-06   0.14E-06
+       44.86       8.36E-07   1.0E-07
+       56.32       2.5E-06    0.14E-06
+       56.76       9.75E-07   1.9E-07
+       71.60       2.8E-06    0.3E-06
+       77.10       2.17E-05   0.07E-05
+       94.660      2.979E-4   0.07E-04   U Ka2, exp. value
+       98.441      4.843E-4   0.09E-04   U Ka1, exp. value
+      103.680      9.85E-05   0.20E-05
+      110.421      5.9E-05    0.2E-05
+      111.3        1.6E-04    1.0E-04    U Kb1', exp. value
+      111.89       3.31E-06   1.0E-06
+      114.333      1.6E-05    1.2E-06
+      114.561      3.64E-05   0.12E-05   U Kb2', exp. value
+      115.4        1.34E-5    0.1E-05
+      121.2        6.7E-07    0.7E-07
+      148.567      1.83E-04   0.04E-04
+      159.955      6.60E-06   0.14E-06
+c    -----------------------------------------------------------
+c    Systematic uncertainty:   1.7 percent for alpha decay
+c
+c
+c    Decay chain and daughter information is contained in the
+c    --------------------------------------------------------
+c    primary decay mode file PU241B.GAM
+c    ----------------------------------

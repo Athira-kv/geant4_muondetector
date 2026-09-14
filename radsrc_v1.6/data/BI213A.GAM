@@ -1,0 +1,29 @@
+c
+     Data file for  Bi-213 decay chain - atomic wt is 212.9944
+c    =========================================================
+c
+c    Parent gamma rays - Secondary (alpha) decay branch
+c    --------------------------------------------------
+
+     There are    10 parent gamma rays or X-rays
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   ------------------------------
+        8.953       0.00023   0.00012    Tl Ll, intensity approximate
+       10.259       0.005     0.003      Tl La, intensity approximate
+       10.994       6.E-05    3.E-05     Tl Ln, intensity approximate
+       12.311       0.004     0.002      Tl Lb, intensity approximate
+       14.402       0.0008    0.0004     Tl Lg, intensity approximate
+       70.832       0.008     0.004      Tl Ka2, intensity approximate
+       72.873       0.013     0.007      Tl Ka1, intensity approximate
+       82.434       0.005     0.003      Tl Kb1', intensity approximate
+       85.185       0.0013    0.0007     Tl Kb2', intensity approximate
+      323.81        0.185     0.013
+c    ------------------------------------------------------------------
+c    Systematic uncertainty:   7.3 percent for alpha decay
+c
+c
+c    Decay chain and daughter information is contained in the
+c    --------------------------------------------------------
+c    primary decay mode data file, BI213B.GAM
+c    ----------------------------------------

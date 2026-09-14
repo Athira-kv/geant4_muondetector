@@ -1,0 +1,13 @@
+U234 .00071
+U235 .182
+U236 .00284
+U238 99.814
+RANGE 30 3300
+AGE 15.
+y       #....generate MC files
+1       #....default brem binning
+1       #....keep all lines
+n
+100.
+2000.
+1       #....default tally binning

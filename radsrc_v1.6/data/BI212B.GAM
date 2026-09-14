@@ -1,0 +1,55 @@
+c
+     Data file for  Bi-212 decay chain - atomic wt is 211.9913
+c    =========================================================
+c
+c    Parent gamma rays - Primary (beta) decay branch
+c    -----------------------------------------------
+
+     There are    24 parent gamma rays and X-rays in the beta branch
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+        9.658       0.0021    0.0007     Po Ll
+       11.119       0.041     0.013      Po La
+       12.085       0.00062   0.00022    Po Ln
+       13.501       0.041     0.014      Po Lb
+       15.869       0.008     0.003      Po Lg
+       76.858       0.060     0.016      Po Ka2
+       79.290       0.10      0.03       Po Ka1
+       89.639       0.035     0.010      Po Kb1'
+       92.673       0.011     0.003      Po Kb2'
+      130.          0.036     0.036      intensity upper limit
+      190.          0.050     0.050      intensity upper limit
+      600.          0.0       0.0        intensity unknown
+      727.25        6.65      0.14
+      785.51        1.107     0.025
+      893.42        0.367     0.011
+      952.17        0.176     0.009
+     1074.1         0.016     0.008      intensity approximate
+     1078.69        0.535     0.018
+     1300.          0.014     0.014      intensity upper limit
+     1512.75        0.313     0.025
+     1620.66        1.51      0.05
+     1679.42        0.068     0.011
+     1805.93        0.111     0.022
+     2200.          0.036     0.036      intensity upper limit
+c    -----------------------------------------------------------
+c    Systematic uncertainty:   0.1 percent upper limit in the beta branch
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has   2 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+      Bi-212   BI212A.GAM   NO_FILE     3.63300E+03   0.10   Alpha  0.3594     0.17   Y
+      Tl-208   TL208.GAM    NO_FILE     1.83200E+02   0.10   Beta   1.000      0.0    Y
+c
+     Branch 2:    2 members -----
+      Bi-212   BI212B.GAM   NO_FILE     3.63300E+03   0.10   Beta   0.6406     0.09   Y
+      Po-212   PO212.GAM    NO_FILE     2.98000E-07   1.01   Alpha  1.000      0.0    Y

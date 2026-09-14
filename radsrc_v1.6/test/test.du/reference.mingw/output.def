@@ -1,0 +1,12 @@
+U234 .00071
+U235 .182
+U236 .00284
+U238 99.814
+AGE 15.
+y       #....generate MC files
+1       #....default brem binning
+1       #....keep all gamma lines discrete
+n       #....don't use the default energy range
+100.    #....minimum energy value
+2000.   #....maximum energy value
+1       #....default tally binning

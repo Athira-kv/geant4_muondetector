@@ -1,0 +1,56 @@
+c
+     Data file for  Pa-233 decay chain - atomic wt is 233.0402
+c    =========================================================
+c
+c    Parent gamma rays
+c    -----------------
+
+     There are    29 parent gamma rays or X-rays
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+       11.620       1.07      0.20       U Ll
+       13.600      18.        3.         U La
+       15.400       0.23      0.05       U Ln
+       17.058      19.        4.         U Lb
+       17.269      0.0036     0.0018     intensity approximate
+       20.420      4.5        0.9        U Lg
+       28.578      0.065      0.007
+       40.415      0.036      0.007
+       41.718      0.013      0.004
+       51.92       0.0007     0.0007      intensity upper limit
+       58.074      0.0036     0.0036     intensity upper limit
+       75.343      1.17       0.07
+       86.652      1.76       0.22
+       92.34       0.0036     0.0036     intensity upper limit
+       94.66      10.2        1.6        U Ka2
+       98.443     16.         3.         U Ka1
+      103.921      0.69       0.07
+      111.298      6.0        1.0        U Kb1'
+      114.445      2.0        0.3        U Kb2'
+      248.25       0.054      0.022
+      258.46       0.0054     0.0005
+      271.597      0.28       0.03
+      298.87       0.0253     0.0022
+      300.175      6.2        0.3
+      311.9       38.         0.0        +/- unknown, reference intensity?
+      340.590      4.2        0.3
+      375.518      0.58       0.11
+      398.663      1.19       0.14
+      415.932      1.51       0.14
+c    -----------------------------------------------------------
+c    Systematic uncertainty:   5.6 percent
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has   1 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+      Pa-233   PA233.GAM    NO_FILE     2.33300E+06   0.37   Beta   1.0        0.0    Y
+       U-233   U233.GAM     NO_FILE     5.02400E+12   1.26   Alpha  1.0        0.0    Y

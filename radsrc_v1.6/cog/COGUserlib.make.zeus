@@ -1,0 +1,371 @@
+# This is the standard distribution COG usrdet/usrsor makefile.
+# Makes the shared (runtime) library COGUserlib.so (.sl on HP),
+# containing the user-written subroutine(s).
+# The user-written subroutine can have any name less than 9
+# characters long.
+
+#-----------Modification Record------------------------------
+# 12/12/06 R. Buck
+# Streamlined code and added IntelLinux machines YANA and ZEUS.
+# Works on MCR and YANA.
+
+# 6/18/02 R. Buck
+# Added command-line argument, in=name1.F,name2.F,...
+# where:
+#  name1.F,name2.F,... are the names of usrdets/usrsors to be
+#  compiled and saved in the runtime library COGUserlib.so.
+# Added Perl script getinc, which gets the include file pathname
+# and writes it to file ifile, which is subsequently read (included)
+# in the make script.
+# getinc uses COGwhere.ss to find the COG directory, so if the user
+#  has not set a path to the COG directory, this will fail.
+
+# 8/6/01 R. Buck
+# Added platform PCLinux
+# 1/31/01 R. Buck
+# Eliminated unwanted usrdet.f file, if any found at make time.
+# 12/8/98 R. Buck
+# Added  -bexpall -berok -brtl /lib/crt0.o (for run-time linking of usrdets) 
+#  to LD_OPTIONS for IBM AIX.
+# 4/22/97 R. Buck
+# Usrdets can now be named.
+#-----------------------------------------------------------------
+
+#---Making the runtime library COGUserlib.so------
+# Type:
+#  gmake -f COGUserlib.make in=usrdet1.F,usrdet2.F,usrsor1.F,...
+# where: usrdet1.F,usrdet2.F,usrsor1.F... are the names of the usrdet or usrsor
+#   routines you wish to have compiled and saved in the runtime library COGUserlib.so.
+# Note that you may have an arbitrary number of different usrdets/usrsors in one
+# COGUserlib.so runtime library. When COG is run, the USRDET (or USRSOR) lines in
+# the input file selects the desired routine.
+#--------------------------------------------------
+
+#------Include File Note------
+# The make file has a method for locating the usrdet/usrsor include
+# files (and, if needed, the COG library files), which are stored in the
+# directory /usrdet/include (/usrdet/lib), found in
+# the COG Distribution directory. If you haven't set the shell PATH
+# variable to include the path to the COG Distribution directory,
+# this will fail.
+#------------------------------
+
+#------PC/LINUX Note------
+# If the usrdet accesses any of the COG routines, then you must specify
+# the COG binary library path in script variable LIBPATH.
+# In this makefile, it is assumed that this path is:
+#  /usr/gapps/cog/Linux/usrdet/libo
+# If otherwise, change the " LIBPATH = ..." line accordingly in the
+# PCLinux section of this script.
+#------------------------------
+	
+# Run perl script "getinc" to get the include and LIBPATH pathnames, and 
+#  write them  into file ifile.
+	DUM := $(shell perl getinc > ifile)
+# Read (by inclusion) the include pathname in ifile.
+# Path is:
+#  I =      /usr/local/apps/cog/usrdet/include  , for example.
+# LIBPATH is:
+#  LIBPATH = /usr/local/apps/cog/usrdet/lib  , for example.
+include ifile
+
+   DUM := $(shell echo "ifile = $I" >& 2)
+
+ifndef I
+	DUM := $(shell echo "Include files not found" >& 2)
+	DUM := $(shell echo "You must set shell PATH variable to include" >& 2)
+	DUM := $(shell echo " the path to the COG Distribution directory" >& 2)
+	override in := NONE
+endif	
+
+# Check command line.
+ifndef in
+	DUM := $(shell echo "make line is:" >& 2)
+	DUM := $(shell echo "  gmake -f COGUserlib.make in=usrdet1.F,usrsor1.F,..." >& 2)
+	DUM := $(shell echo "where usrdet1.F,usrsor1.F,... are the names of usrdets and" >& 2)
+	DUM := $(shell echo "usrsors to be compiled and stored in COGUserlib.so" >& 2)
+	DUM := $(shell echo "  " >& 2)
+	in := NONE
+endif
+	DUM  := $(shell echo "Files to make are $(in)" >& 2)
+	in1 := $(shell echo $(in)|sed s/,/\ /)
+	OBJS := $(shell echo $(in1:.F=.o) )
+	DUM  := $(shell echo "Objects are $(OBJS)" >& 2)
+	DUM  := $(shell echo "Include file path is $I" >& 2)
+	DUM  := $(shell echo "Library file path is $(LIBPATH)" >& 2)
+
+SHELL = /bin/sh
+########Set up platform and nodename############
+platform = $(shell uname)
+ifeq (WINTELPC,$(platform))
+	topdir = c:/cygwin
+else
+ ifeq (PowerMac,$(platform))
+    topdir = /usr
+ endif
+endif
+ifeq (PowerMac,$(platform))
+  curdir = $(shell pwd)
+else
+   curdir = $(shell $(topdir)/bin/pwd)
+endif
+
+nodename = $(shell $(topdir)/bin/uname -n)
+machine = $(shell $(topdir)/bin/uname -m)
+	
+
+########Set up platform and nodename############
+ifeq (Linux,$(platform))
+ platform = IntelLinux
+ Stat_Dynam = -Bstatic
+endif
+ifeq (IntelLinux,$(platform))
+	ifneq (,$(findstring yana,$(nodename)))
+      nodename = YANA
+      compiler_type = intel
+      Stat_Dynam = -Bdynamic
+	endif
+	ifneq (,$(findstring zeus,$(nodename)))
+      nodename = ZEUS
+      compiler_type = intel
+      Stat_Dynam = -Bdynamic
+ 	endif
+	ifeq (alpha, $(machine))
+      nodename = DecLinux
+	endif
+	ifneq (,$(findstring pengra,$(nodename)))
+		nodename = pengra
+	endif
+	ifneq (,$(findstring gentoo,$(nodename)))
+		nodename = gentoo
+	endif
+	ifneq (,$(findstring mcr,$(nodename)))
+		ifdef IFORT
+		  platform = MCRi# Try ifort compiler
+		else
+		  platform = IntelLinux# Is MCR, same version as for PCLinux
+		endif
+		nodename = mcr
+#	    DUM := $(shell echo now platform is $(platform) >& 2)
+	endif
+endif
+
+ifneq (,$(findstring thund,$(nodename)))
+		platform = Thunder
+		nodename = Thunder
+	    DUM := $(shell echo here in Thunder >& 2)
+endif
+ifneq (,$(findstring alc,$(nodename)))
+		platform = IntelLinux# Is ALC, save version as for PCLinux
+		nodename = ALC
+endif
+ifneq (,$(findstring ilx,$(nodename)))
+#     Use pgf compiler on ILX
+	  platform = IntelLinux
+	  nodename = ILX
+      ifc = 1
+	   ifdef ifc
+#        Use ifc compiler on ILX
+		platform = IntelLinux
+		nodename = ILXi
+      endif
+endif
+ifneq (,$(findstring CYGWIN,$(platform)))
+#    Use pgf compiler on Windows PC
+	 platform = WINTELPC
+ endif
+ 
+	PLAT := $(shell echo Platform is $(platform) >& 2)
+	NODE := $(shell echo Nodename is $(nodename) >& 2)
+	MACH := $(shell echo Machine is $(machine) >& 2)
+host = $(shell uname -n)
+override FFCPPFLAGS += -I.
+cogroot = $(dir $(COGREL))
+override FFCPPFLAGS += -DLANGUAGE_FORTRAN
+CPP = cpp
+
+####IntelLinux#####################
+ifeq (IntelLinux, $(platform))
+###insert IntelLinux specifics here###
+# Must use first: source /usr/local/pgi5/linux86/5.1/bin/startpgi.csh
+	FFC = pgf90
+	CPP = pgf90
+    CC = gcc
+ifeq (intel, $(compiler_type))
+	  FFC = ifort
+	  CPP = ifort
+	  DUM := $(shell echo Compiler is $(FFC) >& 2)
+endif	
+    TARGET = COGUserlib.so
+	override OUT += -o # Linux requires output destination for preprocessor
+    override FFCPPFLAGS = 
+	override FFCPPFLAGS :=  -g 
+	override FFLAGS += -fpic -tp px  -Kieee # compile for either p5 or p6 
+	override CPPFLAGS +=  -F -DIntelLinux #
+#  Stop compiler after preprocessing step.
+	COMP := $(FFC)
+	COMPFLAGS := $(FFCFLAGS) -g77libs  # allows linking with files that
+#    LIBPATH = /usr/local/apps/cog/usrdet/lib
+    LDOPTS = -L$(LIBPATH)  $(Stat_Dynam) -shared -lGeom -lDet -lMem -lRW -lLF -lMPI -o $(TARGET) -L$(RADSRC_HOME)/lib -lradsrc -lstdc++
+    
+else
+###HP#####################
+ifeq (HP-UX, $(platform))
+####insert HP specifics here####
+# Set the f77 compiler flags for position-independent code (+z or +Z)
+FFC = fort77
+FFLAGS=  -I$I -g +z
+TARGET = COGUserlib.sl
+LDOPTS = -b  -t -o $(TARGET)
+CPP = /lib/cpp
+override CPPFLAGS += -DHPUX
+#I = /usr/gapps/cog/HP/usrdet/include
+
+else
+####SUN#####################
+ifeq (SunOS, $(platform))
+####insert Sun specifics here###
+# Set the f77 compiler flags for position-independent code (-pic)
+# Change -O to -g below to use f77 debugger.
+#
+FFC = f77
+FFLAGS=  -O -pic -I$I
+TARGET = COGUserlib.so
+LDOPTS = -dy -G -h $(TARGET) -z text -o $(TARGET)
+CPP = /usr/lib/cpp
+override CPPFLAGS += -DSunOS
+# I = /usr/gapps/cog/SunOS/usrdet/include
+
+else
+####SGI#####################
+ifeq (IRIX64, $(platform))
+#insert SGI (hyper) specifics here
+# "Make" machine is hyper.
+FFC = f77
+FC = f77
+FFLAGS=  -O  -I$I -c
+TARGET = COGUserlib.so
+CPP := /usr/lib/cpp
+override CPPFLAGS += -DIRIX64
+LDOPTS := -call_shared -aoutkeep -U -o $(TARGET)
+
+else
+####OSF1#####################
+ifeq (OSF1, $(platform))
+####insert Dec specifics here###
+# Set the f77 compiler flags for position-independent code (-pic)
+# Change -O to -g below to use f77 debugger.
+#
+FFC = f90
+FC = f90
+FFLAGS=  -O  -I$I
+TARGET = COGUserlib.so
+LDOPTS = -shared -o $(TARGET) # -all 
+override CPPFLAGS += -DOSF1
+# I = /usr/gapps/cog/Dec/usrdet/include
+
+else
+####OSF1#####################
+ifeq (AIX, $(platform))
+###insert IBM specifics here###
+# Set the f77 compiler flags for position-independent code (-pic)
+# Change -O to -g below to use f77 debugger.
+#
+FFC = xlf
+FC = xlf
+CPP := /usr/ccs/lib/cpp
+FFLAGS=  -I$I -O 
+TARGET = COGUserlib.so
+LDOPTS = -bexpall -berok -brtl /lib/crt0.o -lxlf90 -lxlf -lm -lc -o $(TARGET)
+override CPPFLAGS += -DIBM  -P
+#I = /usr/gapps/cog/Blue/usrdet/include
+
+else
+####WINTELPC#####################
+ifeq (WINTELPC, $(platform))
+###insert WINTELPC specifics here###
+	FFC = pgf90
+	CPP = pgf90
+    TARGET = COGUserlib.so
+	override OUT += -o # Linux requires output destination for preprocessor
+    override FFCPPFLAGS = 
+	override FFCPPFLAGS :=  -g -v
+	override FFLAGS += -fpic -tp px  -Kieee # compile for either p5 or p6 
+	override CPPFLAGS +=  -F -DPCLinux -DSunOS #
+#  Stop compiler after preprocessing step.
+	COMP := $(FFC)
+	COMPFLAGS := $(FFCFLAGS) -g77libs  # allows linking with files that
+#    LIBPATH = "/Documents and Settings/buck/cog10/WINTELPC/lib"
+    LDOPTS = -L$(LIBPATH) -lGeom -lDet -lMem -shared -o $(TARGET) # Load beep
+
+else
+####ILX#####################
+ifeq (ILX, $(platform))
+###insert ILX specifics here###
+	FFC = pgf90
+	CPP = pgf90
+    TARGET = COGUserlib.so
+	override OUT += -o # Linux requires output destination for preprocessor
+    override FFCPPFLAGS = 
+	override FFCPPFLAGS :=  -g -v
+	override FFLAGS += -fpic -shared 
+	override CPPFLAGS +=  -F -DPCLinux -DSunOS #
+#  Stop compiler after preprocessing step.
+	COMP := $(FFC)
+	COMPFLAGS := $(FFCFLAGS) -g77libs  # allows linking with files that
+#    LIBPATH = /usr/local/apps/cog/usrdet/lib
+    LDOPTS = -L$(LIBPATH) -lGeom -lDet -lMem -shared -o $(TARGET) # Load beep
+endif
+endif
+endif
+endif
+endif
+endif
+endif
+endif
+
+$(TARGET): $(OBJS)
+	@echo "Platform is $(platform)"
+ifeq (IntelLinux, $(platform))
+	$(FFC)  $(OBJS) $(LDOPTS)
+	rm $(OBJS)
+else
+ifeq (PCLinux, $(platform))
+	$(FFC) $(FFLAGS) $(OBJS) $(LDOPTS)
+else
+ifeq (WINTELPC, $(platform))
+	$(FFC) $(FFLAGS) $(OBJS) $(LDOPTS)
+else
+ifeq (SunOS, $(platform))
+	$(FFC) $(FFLAGS) $(OBJS) $(LDOPTS)
+else
+ifeq (ILX, $(platform))
+	$(FFC) $(FFLAGS) $(OBJS) $(LDOPTS)
+else
+	/usr/bin/ld $(LDOPTS) $(OBJS)
+endif
+endif
+endif
+endif
+endif
+	@echo ' '
+	@echo '   Usrdet runtime library $(TARGET) written.'
+	@echo '  Contains usrdet routines: $(OBJS).'
+
+.F.o:
+	@echo ">>> Compiling F to o for $<" #; if [ -f $(*F).f ]; then \
+#	          rm $(*F).f; fi
+	$(CPP) -I$I $(FFCPPFLAGS) $(CPPFLAGS) $< $(OUT) $(*F).f
+	$(FFC) $(FFLAGS) -c $(*F).f -o $*.o
+	rm $(*F).f
+
+# This next section removes troublesome .f files, perhaps left from
+#  a previous make or compilation.	
+.f.o:
+	-rm $< $@	
+	@/bin/echo "\a\a"
+	@echo '**Rerun makefile to compile usrdet.F file'
+	@echo ' '
+	done
+
+SUFFIXES: .F

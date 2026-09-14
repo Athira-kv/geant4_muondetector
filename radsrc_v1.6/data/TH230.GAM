@@ -1,0 +1,38 @@
+c
+     Data file for  Th-230 decay chain - atomic wt is 230.0331
+c    =========================================================
+c
+c    Parent gamma rays
+c    -----------------
+
+     There are    11 parent gamma rays or X-rays
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+       67.6758      0.376     0.021
+      109.97        5.9E-05   0.5E-05
+      143.876       0.0486    0.0022
+      186.057       0.0088    0.0004
+      205.1         5.E-06    1.E-06
+      235.01        8.1E-06   2.0E-06
+      253.732       0.0111    0.0005
+      253.84        0.00085   0.00009
+      551.8         1.01E-06  0.20E-06
+      570.5         3.E-06    1.E-06
+      620.0         1.01E-06  0.20E-06 
+c    -----------------------------------------------------------
+c    Systematic uncertainty:   6.0 percent
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has  1 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+      Th-230   TH230.GAM    NO_FILE     2.37900E+12   0.40   Alpha  1.000      0.0    Y
+      Ra-226   RA226.GAM    NO_FILE     5.04900E+10   0.44   Alpha  1.000      0.0    Y

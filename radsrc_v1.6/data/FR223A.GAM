@@ -1,0 +1,19 @@
+c
+     Data file for  Fr-223 decay chain - atomic wt is 223.0197
+c    =========================================================
+c
+c    Parent gamma rays - Secondary (alpha) decay branch
+c    --------------------------------------------------
+c
+     There are     0 parent gamma rays or X-rays in the alpha branch
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   ----------------------------
+c    ----------------------------------------------------------------
+     Systematic uncertainty:   0.0 percent
+c
+c
+c    Decay chain and daughter information is contained in the
+c    --------------------------------------------------------
+c    primary decay mode file:  FR223B.GAM
+c    ------------------------------------

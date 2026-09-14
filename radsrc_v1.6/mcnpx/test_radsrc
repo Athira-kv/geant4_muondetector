@@ -1,0 +1,30 @@
+#!/bin/sh
+#
+# run mcnpx test job
+#
+# mcnpx  input file = balltest
+# radsrc input file = radsrc.in
+#
+
+#....delete previous mcnpx output files
+/bin/rm outp runtpe 2> /dev/null
+
+#....location of mcnpx executable that contains RadSrc source.F
+mcnpx=/usr/gapps/dmc/mcnpx/v26b.radsrc_dev/build_yana/bin/mcnpx   
+
+#....location of mcnpx data files
+export DATAPATH=/usr/gapps/dmc/mcnpx/data 
+
+#....setup radsrc environment variables
+source ../setup
+
+#....run test job
+$mcnpx inp=balltest
+
+#....compare to reference
+echo
+echo '###########################'
+echo 'Comparing outp to reference'
+echo '###########################'
+diff outp outp.ref
+

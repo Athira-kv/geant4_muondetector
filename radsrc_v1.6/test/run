@@ -1,0 +1,68 @@
+#!/bin/bash
+#.... require bash because the Ubuntu default is dash, which can cause problems
+#
+# run [-u]
+#
+# run all of the tests and compare output to reference
+#
+# -u option updates reference files
+#
+
+[ ! -e ../setup ] && echo '../setup not found; run make' && exit
+
+#....setup environment variables to point to the executable and the data
+source ../setup
+
+#....check for update flag
+if [ "$1" = -u ] 
+then echo Updating reference files only
+     update=yes
+     shift
+fi
+
+#....list of tests to run
+tests=${1:-"test.du test.heu test.pu test.range"}
+REF=reference
+
+
+#....check if this is a PC (CYGWIN system), because output is different
+if expr `uname` : 'CYGWIN' > /dev/null
+then
+  #....check if .exe is cygwin or mingw, because output is different
+  if objdump -p ../bin/radsrc.exe | grep DLL | grep -q cygwin 
+  then REF=$REF.cygwin 
+  else REF=$REF.mingw
+       #....for mingw must setup DOS style path to the data
+       PCPATH=$(cygpath -d $RADSRC_DATA)
+       export RADSRC_DATA=$PCPATH
+       PCPATH=$(cygpath -d $RADSRC_HOME)
+       export RADSRC_HOME=$PCPATH
+  fi
+fi
+
+echo Reference is $REF
+
+for test in $tests
+do 
+  if [ "$update" ] 
+  then cp $test/output* $test/$REF #....update reference files
+  else
+    echo running $test
+    cd $test
+    if `"$RADSRC_HOME/bin/radsrc" input > /dev/null`
+    then
+      #....compare each file to its reference only if test ran successfully
+#      ls output* | xargs -I {} diff -y --suppress-common-lines {} $REF
+#      ls output* | xargs -I {} ../filediff {} $REF  # does not work on RedHat circa 2004
+      for file in `ls output*`
+      do ../filediff -q $file $REF
+      done
+    else
+      echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+      echo "                    $test failed"
+      echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    fi
+    cd ..
+  fi
+done
+

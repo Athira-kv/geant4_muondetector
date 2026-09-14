@@ -1,0 +1,86 @@
+ radiography vessel
+c
+c => cell cards.  note that a negative density implies
+c    that the density is in g/cc (not atoms/cc).
+c    material "0" is a vacuum, by definition.
+c
+c cell  material    density  bounding surfaces
+c  #       #
+   1       0                    -1    2
+   2       1         -0.00001895      -2
+   3       0                     1
+c -19.3
+c => end of cell card section. 
+c
+
+c 
+c =>  the blank line above indicates the end of the cell
+c     section.  the second section of the input deck contains
+c     the surface cards.  note that surfaces #s 400-800 have
+c     a "tr" card associated with them
+c
+c surface   surface      required
+c   #      symbol       parameters
+    1        so        100.0
+    2        so          5.01
+c
+c => end of surface card section
+c
+
+c
+c => the blank line above indicates the end of the
+c    surface card section, and beginning of the
+c    last part of the deck
+c
+c => which particles will be tracked?
+c
+ mode p e
+c
+c => energy cutoffs for photon and electron tracking
+c
+ elpt:p 0.0001 0.0001
+ elpt:e 0.1 0.1
+c
+c => in which cells will the particles be tracked?
+c
+ imp:p 1 1 0
+ imp:e 1 1 0
+c
+c => material compositions
+c
+ m1 92238 1
+c
+c => the "tr" card for surfaces 400-800
+c
+c
+c => change the stride of the randum number generator
+c
+ dbcn 12J 500000
+c
+c => run for 718 minutes
+c
+c ctme 718
+c  To shorten the time, could use ctme 1, but that does not ensure the
+c  same problem is run on various platforms. Change the number of particles.
+ nps 100
+c
+c => alter some physics options for photon transport
+c
+ phys:p 2j 1
+c SI1 7.00
+c SP1 -21 2
+ RDUM 5.01
+ IDUM 2
+c
+c => define the source distribution.
+c    particles :
+c        are photons (particle type #2),
+c        start on surface 100, 
+c        start at (x,y,z) coordinates (0,0,-678),
+c        have energies sampled from distribution #1,
+c        have a direction cosine sampled from distribution #2.
+c
+F101:P 2
+C
+E101   .01 148I 1.50
+

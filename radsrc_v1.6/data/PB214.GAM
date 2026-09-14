@@ -1,0 +1,63 @@
+c
+     Data file for  Pb-214 decay chain - atomic wt is 218.0090
+c    =========================================================
+c
+c    Parent gamma rays
+c    -----------------
+
+     There are    36 parent gamma rays or X-rays
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+        9.419       0.29      0.03       Bi Ll
+       10.828       5.8       0.3        Bi La
+       11.712       0.069     0.004      Bi Ln
+       13.088       5.7       0.5        Bi Lb
+       15.439       1.16      0.12       Bi Lg
+       53.172       1.10      0.05
+       74.814       6.52      0.22       Bi Ka2
+       77.107      11.0       0.4        Bi Ka1
+       87.190       3.88      0.13       Bi Kb1'
+       90.128       1.15      0.04       Bi Kb2'
+      137.4         0.059     0.020
+      141.3         0.039     0.020      intensity approximate
+      196.3         0.049     0.020
+      205.77        0.015     0.015      intensity upper limit
+      238.40        0.015     0.015      intensity upper limit
+      241.92        7.46      0.15
+      258.94        0.55      0.02
+      274.56        0.32      0.05
+      295.091      19.2       0.4
+      298.69        0.020     0.020      intensity upper limit
+      305.50        0.023     0.012      intensity approximate
+      314.2         0.079     0.020
+      324.3         0.020     0.010      intensity approximate
+      351.87       37.1       0.7
+      462.05        0.17      0.03
+      470.8         0.010     0.005      intensity approximate
+      480.32        0.338     0.018
+      487.13        0.439     0.014
+      511.0         0.029     0.010
+      533.50        0.190     0.014
+      538.7         0.0049    0.0025     intensity approximate
+      543.91        0.023     0.008
+      580.06        0.364     0.015
+      765.9         0.079     0.020      ?
+      785.827       1.09      0.03
+      838.999       0.587     0.022
+c    -----------------------------------------------------------
+c    Systematic uncertainty:   1.7 percent
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has   1 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+      Pb-214   PB214.GAM    NO_FILE     1.60800E+03   3.36   Beta   1.000      0.0    Y
+      Bi-214   BI214A.GAM   NO_FILE     1.19400E+03   2.01   Alpha  0.00021    4.76   Y

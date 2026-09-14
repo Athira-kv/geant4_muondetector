@@ -1,0 +1,174 @@
+c
+     Data file for Pa-234m decay chain - atomic wt is 234.0434
+c    =========================================================
+c
+c    Parent gamma rays - Primary (beta) decay branch
+c    -----------------------------------------------
+
+     There are   143 parent gamma rays or X-rays in the beta branch
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+       11.372       0.001382  0.000217   Pa Ll                      
+       11.62        0.007804  0.001919   U Ll                       
+       13.275       0.023157  0.002943   Pa La                      
+       13.6         0.126657  0.029425   U La                       
+       14.953       0.000217  0.000038   Pa Ln                      
+       15.4         0.001663  0.000384   U La                       
+       16.547       0.026867  0.003838   Pa Lb                      
+       17.069       0.117702  0.028146   U Lb                       
+       19.891       0.003198  0.001279   Pa Lg                      
+       20.366       0.025587  0.006397   U Lg                       
+       62.78        0.003582  0.000384                              
+       94.651       0.153524  0.031984   U Ka2                      
+       98.434       0.243079  0.051175   U Ka1                      
+       99.852       0.000473  0.000038                              
+      111.025       0.089556  0.01919    U Kb1'                     
+      114.866       0.030705  0.006397   U Kb2'                     
+      140.15        0.001075  0.00009                               
+      184.6         0.001535  0.000128                              
+      192.74        0.000069  0.000031                              
+      193.4         0.000563  0.000281   intensity approximate
+      199.46        0.000512  0.000102                              
+      203.12        0.001249  0.         SNL energy, intensity
+      210.6         0.001177  0.000128                              
+      234.59        0.001279  0.001279   intensity upper limit      
+      236.03        0.000038  0.000026   intensity approximate      
+      243.5         0.004478  0.00009                               
+      247.7         0.000667  0.         SNL intensity
+      258.26        0.0730    0.0003     SNL energy, intensity
+      274.45        0.00032   0.000166   intensity approximate      
+      276.83        0.000281  0.000051                              
+      299.08        0.000563  0.000115                              
+      311.          0.000461  0.00009                               
+      316.29        0.000128  0.000032                              
+      338.4         0.001011  0.000205                              
+      357.9         0.000716  0.000154                              
+      360.8         0.000614  0.000128                              
+      387.8         0.000896  0.000154                              
+      387.87        0.000384  0.000051                              
+      450.96        0.002699  0.0003     SNL energy, intensity
+      453.58        0.0019    0.0002     SNL energy, intensity
+      456.5         0.00064   0.000128                              
+      468.21        0.001845  0.         SNL intensity
+      475.75        0.0023    0.0001     SNL energy, intensity
+      507.3         0.001412  0.         SNL intensity                     
+      509.11        0.001919  0.000256                              
+      516.8         0.000015  0.000004                              
+      526.2         0.000038  0.000038   intensity upper limit      
+      543.98        0.0036    0.0002     SNL energy, intensity
+      557.3         0.00064   0.000141                              
+      557.7         0.000018  0.000005                              
+      557.7         0.000018  0.000004                              
+      572.          0.00078   0.000154                              
+      625.5         0.001279  0.000128                              
+      647.7         0.001407  0.000128                              
+      649.1         0.00096   0.000192                              
+      655.1         0.000856  0.         SNL intensity                     
+      691.08        0.0090    0.0002     SNL energy, intensity
+      674.24        0.000576  0.000115                              
+      683.          0.000512  0.000102                              
+      695.9         0.001407  0.000128                              
+      700.4         0.000631  0.         SNL intensity                     
+      702.05        0.0071    0.0002     SNL energy, intensity
+      705.90        0.003059  0.         SNL energy, intensity
+      708.4         0.000998  0.000128                              
+      718.94        0.000031  0.000006                              
+      721.33        0.000029  0.000014                              
+      732.7         0.001164  0.000128                              
+      739.95        0.0118    0.0002     SNL energy, intensity
+      742.817       0.090686  0.         SNL intensity
+      750.5         0.000018  0.000008                              
+      760.3         0.001407  0.000128                              
+      766.412       0.321875  0.         SNL intensity
+      782.8         0.006781  0.00064                               
+      783.38        0.000063  0.000014                              
+      786.287       0.053142  0.         SNL intensity
+      792.3         0.000008  3.838095   intensity approximate      
+      805.74        0.004155  0.         SNL energy, intensity
+      808.20        0.002518  0.         SNL energy, intensity
+      818.          0.000896  0.000256                              
+      826.08        0.001267  0.000256                              
+      831.5         0.003198  0.015736   intensity approximate      
+      844.4         0.000972  0.000205                              
+      851.57        0.006802  0.         SNL energy, intensity
+      866.98        0.00096   0.000192                              
+      881.1         0.003454  0.000384                              
+      882.5         0.001663  0.000384                              
+      883.22        0.001847  0.         SNL intensity 
+      887.28        0.0071    0.0002     SNL energy, intensity
+      921.70        0.0127    0.0001     SNL energy, intensity                
+      926.61        0.001686  0.         SNL energy, intensity
+      936.8         0.001663  0.000384                              
+      941.94        0.0025    0.0001     SNL energy, intensity
+      945.90        0.015618  0.         SNL energy, intensity
+      959.8         0.000768  0.000256                              
+      982.85        0.        0.         intensity unknown          
+      994.93        0.0057    0.0001     SNL energy, intensity
+     1000.99        0.8390    0.0047     SNL energy, intensity
+     1041.70        0.0012    0.0001     SNL energy, intensity
+     1059.72        0.000985  0.000192                              
+     1061.86        0.0023    0.0001     SNL energy, intensity
+     1084.25        0.000378  0.         SNL energy, intensity
+     1085.37        0.000448  0.000064                              
+     1120.5         0.001535  0.000128                              
+     1124.93        0.0042    0.0001     SNL energy, intensity
+     1126.17        0.000857  0.000128                              
+     1174.1         0.001714  0.000166                              
+     1193.69        0.0135    0.0001     SNL energy, intensity
+     1220.37        0.0009    0.0001     SNL energy, intensity
+     1237.24        0.0053    0.0001     SNL energy, intensity
+     1353.          0.000386  0.         SNL intensity
+     1392.          0.002303  0.000512                              
+     1413.88        0.0023    0.0001     SNL energy, intensity
+     1434.13        0.0097    0.0001     SNL energy, intensity
+     1457.4         0.001663  0.000384                              
+     1500.9         0.001151  0.00023                               
+     1510.20        0.0129    0.0002     SNL energy, intensity
+     1527.27        0.0024    0.0001     SNL energy, intensity
+     1548.12        0.0014    0.0001     SNL energy, intensity
+     1553.74        0.0081    0.0001     SNL energy, intensity
+     1558.7         0.000691  0.000141                              
+     1570.67        0.0011    0.0001     SNL energy, intensity
+     1591.65        0.0019    0.0001     SNL energy, intensity
+     1602.2         0.000371  0.00009                               
+     1667.3         0.000742  0.000154                              
+     1693.7         0.000409  0.000077                              
+     1720.5         0.000294  0.000128                              
+     1732.2         0.001663  0.000256                              
+     1737.73        0.0212    0.0002     SNL energy, intensity
+     1759.81        0.0014    0.0001     SNL energy, intensity
+     1765.44        0.0087    0.0001     SNL energy, intensity
+     1796.2         0.000281  0.000051                              
+     1809.04        0.0037    0.0001     SNL energy, intensity
+     1819.69        0.0009    0.0001     SNL energy, intensity
+     1831.36        0.0172    0.0002     SNL energy, intensity
+     1863.09        0.0012    0.0001     SNL energy, intensity
+     1867.68        0.0092    0.0001     SNL energy, intensity
+     1874.85        0.0082    0.0001     SNL energy, intensity
+     1877.21        0.00165   0.0001     SNL energy, intensity, new line
+     1893.50        0.0022    0.0001     SNL energy, intensity
+     1911.17        0.0063    0.0001     SNL energy, intensity
+     1926.4         0.000190  0.         SNL intensity
+     1937.01        0.0029    0.0001     SNL energy, intensity
+     1969.9         0.000499  0.000102                                
+c    ------------------------------------------------------------
+c    Systematic uncertainty:  14.0 percent for beta decay branch
+c
+c
+c    Decay chain and daughter information for both the beta and IT decay modes
+c    -------------------------------------------------------------------------
+c
+     This decay chain has  2 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+     Pa-234m   PA234MB.GAM  PA234MB.BRM 7.02000E+01   0.85   Beta   0.9987     0.02   Y
+       U-234   U234.GAM     NO_FILE     7.74400E+12   0.24   Alpha  1.000      0.0    Y
+c
+     Branch 2:    2 members -----
+     Pa-234m   PA234MI.GAM  NO_FILE     7.02000E+01   0.85   IT     0.0013    15.38   Y
+      Pa-234   PA234.GAM    NO_FILE     2.41200E+04   0.75   Beta   1.000      0.0    Y

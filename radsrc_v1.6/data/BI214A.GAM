@@ -1,0 +1,21 @@
+c
+     Data file for  Bi-214 decay chain - atomic wt is 213.9987
+c    =========================================================
+c
+c    Parent gamma rays - Secondary (alpha) decay branch
+c    --------------------------------------------------
+
+     There are     2 parent gamma rays or X-rays in the alpha decay branch
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+       62.5         0.0       0.0        intensity unknown
+      191.1         0.0       0.0        intensity unknown
+c    -----------------------------------------------------------
+     Systematic uncertainty:   0.0 percent 
+c
+c
+c    Decay chain and daughter information is contained in the
+c    --------------------------------------------------------
+c    primary decay mode gamma file:  BI214B.GAM
+c    ------------------------------------------

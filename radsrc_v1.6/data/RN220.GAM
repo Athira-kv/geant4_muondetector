@@ -1,0 +1,28 @@
+c
+     Data file for  Rn-220 decay chain - atomic wt is 224.0114
+c    =========================================================
+c
+c    Parent gamma rays
+c    -----------------
+
+     There are     1 parent gamma rays and X-rays
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+      549.7         0.070     0.014
+c    -----------------------------------------------------------
+c    Systematic uncertainty:   0.0 percent
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has   1 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+      Rn-220   RN220.GAM    NO_FILE     5.56000E+01   0.18   Alpha  1.000      0.0    Y
+      Po-216   PO216.GAM    NO_FILE     1.50000E-01   0.67   Alpha  1.000      0.0    Y

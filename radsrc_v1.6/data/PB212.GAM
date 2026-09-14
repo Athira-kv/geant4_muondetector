@@ -1,0 +1,43 @@
+c
+     Data file for  Pb-212 decay chain - atomic wt is 211.9919
+c    =========================================================
+c
+c    Parent gamma rays
+c    -----------------
+
+     There are    16 parent gamma rays and X-rays
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+        9.419       0.34      0.03       Bi Ll
+       10.828       6.6       0.3        Bi La
+       11.712       0.087     0.005      Bi Ln
+       13.099       6.0       0.4        Bi Lb
+       15.376       1.13      0.10       Bi Lg
+       74.814      10.5       0.4        Bi Ka2
+       77.107      17.7       0.6        Bi Ka1
+       87.190       6.27      0.22       Bi Kb1'
+       90.128       1.86      0.07       Bi Kb2'
+      115.122       0.591     0.018
+      123.456       0.0       0.0        intensity unknown
+      164.15        0.005     0.003      intensity approximate
+      176.577       0.051     0.006
+      238.578      43.6       1.1
+      300.034       3.34      0.10
+      415.156       0.028     0.007
+c    -----------------------------------------------------------
+c    Systematic uncertainty:   1.4 percent
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has   1 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+      Pb-212   PB212.GAM    NO_FILE     3.83000E+04   0.09   Beta   1.000      0.0    Y
+      Bi-212   BI212A.GAM   NO_FILE     3.63300E+03   0.10   Alpha  0.3594     0.17   Y

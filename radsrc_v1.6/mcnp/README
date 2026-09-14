@@ -1,0 +1,43 @@
+Directions for MCNP build with RadSrc library
+(tested with 5.1.40)
+
+(0) Build mcnp5 from source code
+
+(1) Download and install 'libradsrc.a'
+
+(2) Copy source.F90 to /path_to_mcnp/Source/src
+
+(3) Set environment variables for RadSrc 
+    (works for both csh or sh type shells)
+  
+    source /path_to_RadSrc/setup
+
+(4) Rebuild mcnp with 
+
+    make reinstall  EXTRALIBS='-lstdc++ -L$(RADSRC_HOME)/lib -lradsrc'
+
+---------------------------------------------------
+Directions for running MCNP with RadSrc library :
+
+(1) Create 'problem.in' to specify RadSrc parameters.
+    At run time mcnp will look for this file in the current directory. 
+
+(4) Set environment variables for RadSrc 
+    (works for both csh or sh type shells)
+
+    source /path_to_RadSrc/setup
+
+  (3) Add 'IDUM n' to mcnp input deck, where n is the internal cell 
+    number in which gammas will be generated.
+
+----------------------------------------------------
+The shell script 'test_radsrc' shows an example set of commands to run
+a test job and compare the output with a reference. Edit this script to
+match your local setup. Note that the example uses RDUM to specify the 
+radius of the depleted uranium ball.
+
+Example files:
+  balltest
+  problem.in
+
+mcnpx inp=balltest

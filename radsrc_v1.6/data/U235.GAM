@@ -1,0 +1,90 @@
+c
+     Data file for   U-235 decay chain - atomic wt is 235.0439
+c    =========================================================
+c
+c    Parent gamma rays
+c    -----------------
+c
+     There are    63 parent gamma rays or X-rays
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+       11.118       1.        0.5        Th Ll, intensity approximate
+       12.952      22.       11.         Th La, intensity approximate
+       14.511       0.22      0.06       Th Ln
+       16.119      15.        6.         Th Lb
+       19.118       2.6       0.7        Th Lg
+       31.585       0.016     0.005
+       41.13        0.03      0.015      intensity approximate
+       41.96        0.06      0.01       IAEA Values
+       51.179       0.020     0.010      intensity approximate
+       54.201       0.030     0.030      intensity upper limit
+       64.348       0.020     0.010      intensity approximate
+       72.71        0.11      0.06       intensity approximate
+       74.8         0.06      0.01       IAEA Values
+       89.955       3.36      0.21       Th Ka2
+       93.360       5.5       0.3        Th Ka1
+       95.72        0.0       0.0        intensity unknown
+       96.154       0.086     0.011
+      105.362       1.98      0.12       Th Kb1'
+      108.990       0.66      0.04       Th Kb2'
+      109.16        1.54      0.05       IAEA Values
+      116.11        0.07      0.035      intensity approximate
+      119.98        0.026     0.013      intensity approximate
+      136.72        0.012     0.006      intensity approximate
+      140.76        0.22      0.02       IAEA Values
+      143.76       10.96      0.08       IAEA Values
+      146.988       0.0       0.0        intensity unknown
+      150.93        0.08      0.01       IAEA Values
+      163.33        5.08      0.04       IAEA Values
+      172.27        0.010     0.005      intensity approximate
+      181.89        0.0       0.0        intensity unknown
+      182.61        0.34      0.02       IAEA Values
+      185.72       57.2       0.2
+      194.94        0.63      0.01       IAEA Values
+      198.90        0.042     0.006      IAEA Values correcred 11/21/00 bp
+      202.11        1.08      0.02       IAEA Values
+      205.31        5.01      0.05       IAEA Values
+      215.305       0.027     0.003
+      221.38        0.12      0.01       IAEA Values
+      228.77        0.008     0.003
+      233.50        0.029     0.005      IAEA Values
+      240.85        0.054     0.010      IAEA energy, Brown and Firestone intensity * 0.8 - 11/13/90
+      246.84        0.053     0.003      IAEA Values
+      266.483       0.006     0.002
+      275.47        0.0049    0.0005     Brown and Firestone intensity * 0.1 - 11/13/90 
+      281.45        0.006     0.003      intensity approximate
+      282.98        0.005     0.002
+      289.57        0.007     0.0035     intensity approximate
+      290.29        0.0       0.0        intensity unknown
+      291.720       0.014     0.007      Brown and Firestone intensity * 4.7 - 11/13/90
+      301.72        0.0050    0.0025     intensity approximate
+      310.71        0.004     0.002      intensity approximate
+      317.12        0.0010    0.0005     intensity approximate
+      343.78        0.0030    0.0015     intensity approximate
+      345.921       0.029     0.005      intensity modified by fudge 11/02/90
+      356.068       0.0050    0.0025     intensity approximate
+      387.874       0.0038               | intensity lowered a factor of 10 to
+      390.32        0.001                |lowered from .004 U-235disk 1/10/01
+      410.269       0.0030    0.0015     intensity approximate
+      448.42        0.0010    0.0005     intensity approximate
+      455.12        0.0008    0.0004      changed from .008 1/10/01 bp
+      517.2         0.0004    0.0002     intensity approximate
+      742.52        0.0004    0.0002     intensity approximate
+      794.72        0.0006    0.0003     intensity approximate
+c    -----------------------------------------------------------
+     Systematic uncertainty:  10.0 percent
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has  1 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+       U-235   U235.GAM     NO_FILE     2.22100E+16   0.16   Alpha  1.000      0.0    Y
+      Th-231   TH231.GAM    NO_FILE     9.18700E+04   0.12   Beta   1.000      0.0    Y

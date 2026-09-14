@@ -1,0 +1,249 @@
+c
+     Data file for  Pa-234 decay chain - atomic wt is 234.0433
+c    =========================================================
+c
+c    Parent gamma rays
+c    -----------------
+
+     There are   222 parent gamma rays or X-rays
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+       11.620       2.6       0.4        U Ll
+       13.600      43.        6.         U La
+       15.400       0.99      0.15       U Ln
+       17.120      52.        8.         U Lb
+       20.309      11.8       1.9        U Lg
+       34.37        0.0036    0.0010
+       43.470       0.12      0.03
+       45.28        0.011     0.002
+       58.31        0.009     0.003
+       62.78        3.2       0.2
+       67.22        0.058     0.020
+       69.9         0.23      0.13       intensity approximate
+       79.65        0.27      0.14       intensity approximate
+       94.651      15.7       1.0        U Ka2
+       98.434      25.3       1.6        U Ka1
+       99.852       4.8       1.0
+      103.7         0.12      0.04
+      111.025       9.2       0.6        U Kb1
+      114.866       3.11      0.21       U Kb2
+      125.53        1.0       0.3
+      131.31       22.        0.308      Derived from SNL data
+      134.3         0.21      0.07
+      137.7         0.15      0.03
+      140.15        0.96      0.09
+      143.9         0.35      0.05
+      150.0         0.2       0.1        intensity approximate
+      152.76        6.385     0.236      Derived from SNL data
+      157.96        0.7       0.2
+      165.8         0.09      0.02
+      170.75        0.5       0.1
+      174.52        0.20      0.05
+      185.92        2.0       0.3
+      193.55        0.6       0.1
+      196.43        0.070     0.014
+      199.46        0.48      0.16
+      200.96        1.1       0.3
+      203.12        1.116     0.         SNL energy, intensity derived
+      210.7         0.05      0.01
+      219.80        0.2       0.1        intensity approximate
+      226.95       12.46      0.167      Derived from SNL data
+      245.16        0.9       0.2
+      248.94        2.179     0.         Derived from SNL intensity
+      267.1         0.17      0.03
+      272.20        1.385     0.126      Derived from SNL data
+      274.45        0.30      0.15       intensity approximate
+      276.83        0.26      0.07
+      278.10        0.070     0.014
+      286.40        0.14      0.03
+      289.25        0.110     0.022      ?
+      293.874       3.769     0.117      Derived from SNL data
+      299.08        0.0       0.0        intensity unknown
+      309.6         0.10      0.02
+      313.83        0.30      0.15       intensity approximate
+      316.29        0.120     0.024
+      320.7         0.120     0.024
+      330.0         0.30      0.15       intensity approximate
+      330.62        0.6       0.3        intensity approximate
+      352.16        0.6       0.1
+      369.52        3.385     0.118      Derived from SNL data
+      372.02        1.769     0.122      Derived from SNL data
+      409.8         0.4       0.2        intensity approximate
+      416.0         0.10      0.02       ?
+      426.8         0.6       0.3        intensity approximate
+      432.8         0.011     0.003 
+      446.1         0.120     0.024
+      458.63        1.538     0.123      Derived from SNL data
+      461.3         0.16      0.03       ?
+      467.5         0.350     0.         Derived from SNL intensity
+      472.32        0.24      0.05
+      473.5         0.18      0.04
+      478.7         0.30      0.06
+      480.4         0.4       0.1
+      482.5         0.3       0.1
+      498.8         0.10      0.02
+      506.69        1.606     0.         Derived from SNL intensity
+      513.6         1.3       0.2
+      520.2         0.60      0.12
+      521.09        0.90      0.18
+      526.20        0.0       0.0        intensity unknown
+      527.04        0.6       0.2
+      533.2         0.20      0.04
+      537.1         0.16      0.03
+      557.78        0.26      0.05
+      565.2         1.4       0.3
+      569.30       15.615     0.203      Derived from SNL data
+      574.8         2.0       1.0        intensity approximate
+      585.8         0.15      0.03
+      596.5         0.7       0.7        intensity upper limit
+      602.1         0.9       0.4        ?
+      611.5         0.8       0.4        intensity approximate
+      617.0         0.20      0.04
+      624.31        0.8       0.2
+      627.5         0.8       0.2
+      632.0         0.40      0.08
+      634.4         0.30      0.06
+      639.7         0.20      0.04
+      643.2         0.20      0.04
+      646.84        0.30      0.06
+      653.57        0.620     0.         Derived from SNL data
+      655.0         0.414     0.         Derived from SNL data
+      658.0         0.9       0.4
+      660.6         0.30      0.06
+      664.8         1.3       0.4
+      666.42        1.154     0.113      Derived from SNL data
+      669.64        1.308     0.116      Derived from SNL data
+      683.3         0.24      0.05
+      688.08        0.28      0.06
+      692.7         1.5       0.5
+      698.85        4.053     0.         Derived from SNL intensity
+      705.90        2.647     0.         SNL energy, intensity derived
+      708.40        0.024     0.0        +/- unknown
+      711.2         0.20      0.04       ?
+      713.8         0.16      0.05       ?
+      721.33        0.0       0.0        intensity unknown
+      733.38        8.846     0.133      Derived from SNL data
+      738.88        1.615     0.134      Derived from SNL data
+      742.817       3.011     0.         Derived from SNL intensity
+      746.5         0.13      0.03
+      755.00        1.615     0.131      Derived from SNL data
+      760.1         0.16      0.03       ?
+      766.369       0.30      0.06
+      766.412       0.096     0.         Derived from SNL intensity
+      768.5         0.56      0.11
+      777.9         0.20      0.04
+      780.4         1.1       0.4
+      783.38        0.5       0.1
+      786.287       1.737     0.         Derived from SNL intensity
+      793.6         1.5       0.3
+      796.42        4.154     0.179      Derived from SNL data
+      804.52        0.40      0.08
+      805.74        3.573     0.         SNL energy, intensity derived
+      808.20        0.063     0.         SNL energy, intensity derived
+      812.5         0.5       0.1
+      819.21        2.846     0.111      Derived from SNL data
+      824.0         2.        2.         intensity upper limit
+      824.94        5.231     0.136      Derived from SNL data
+      831.39        6.000     0.114      Derived from SNL data
+      842.4         0.14      0.03
+      844.4         0.5       0.2
+      851.57        0.152     0.         SNL energy, intensity derived
+      873.4         0.120     0.024
+      875.94        3.231     0.097      Derived from SNL data
+      880.45       16.308     0.147      Derived from SNL data
+      883.22       14.81      0.         SNL energy, intensity derived
+      898.52        4.538     0.100      Derived from SNL data
+      904.38        0.5       0.2
+      920.          0.4       0.2        intensity approximate
+      924.98       10.923     0.131      Derived from SNL data
+      926.61       13.473     0.         SNL energy, intensity derived
+      942.05        0.0       0.0        intensity unknown
+      945.90       13.756     0.         SNL energy, intensity derived
+      948.0         8.0       1.6
+      960.          0.10      0.02
+      967.33        0.60      0.12
+      978.8         1.        0.5        intensity approximate
+      980.42        3.462     0.104      Derived from SNL data
+      982.85        0.0       0.0        intensity unknown
+      984.12        1.9       0.6 
+     1022.23        0.6       0.3        intensity approximate
+     1029.03        0.8       0.3 
+     1041.90        0.0       0.0        intensity unknown
+     1044.9         0.5       0.1
+     1074.6         0.25      0.08
+     1084.25        0.632     0.0        SNL energy, intensity derived
+     1085.37        0.0       0.0        intensity unknown
+     1108.5         0.3       0.1
+     1122.09        0.5       0.1
+     1126.17        0.80      0.09
+     1153.6         0.3       0.1
+     1171.3         0.24      0.09
+     1208.          0.30      0.15       intensity approximate
+     1216.4         0.37      0.06
+     1229.          0.30      0.06       ?
+     1241.40        0.5       0.3        intensity approximate
+     1251.          0.30      0.06       ?
+     1277.4         0.20      0.07
+     1292.66        0.692     0.078      Derived from SNL data
+     1352.85        1.165     0.         Derived from SNL intensity
+     1358.5         0.120     0.024
+     1393.57        3.000     0.075      Derived from SNL data
+     1399.7         0.23      0.05
+     1427.33        0.20      0.04
+     1445.7         0.4       0.1
+     1452.63        0.923     0.067      Derived from SNL data
+     1460.          0.30      0.06       ?
+     1493.94        0.20      0.06
+     1516.          0.40      0.08
+     1527.20        0.0       0.0        intensity unknown
+     1549.4         0.10      0.04
+     1558.7         0.0       0.0        intensity unknown
+     1570.67        0.0       0.0        intensity unknown
+     1580.02        0.17      0.08
+     1585.3         0.25      0.10
+     1593.88        2.077     0.075      Derived from SNL data
+     1602.2         0.0       0.0        intensity unknown
+     1627.9         0.15      0.03
+     1638.          0.4       0.2        intensity approximate
+     1656.          0.15      0.07       intensity approximate
+     1668.44        0.923     0.057      Derived from SNL data
+     1686.2         0.5       0.2
+     1694.08        1.000     0.059      Derived from SNL data
+     1699.8         0.15      0.05
+     1719.5         0.02      0.01       intensity approximate
+     1738.0         0.10      0.05       intensity approximate
+     1741.7         0.10      0.05       intensity approximate
+     1750.1         0.05      0.02
+     1756.          0.25      0.05
+     1768.0         0.06      0.03       intensity approximate
+     1772.3         0.10      0.05       intensity approximate
+     1797.3         0.3       0.1
+     1828.          0.030     0.006
+     1837.9         0.06      0.02
+     1850.          0.05      0.02
+     1872.8         0.07      0.03
+     1890.1         0.19      0.06
+     1897.1         0.15      0.04
+     1905.          0.28      0.06
+     1926.0         0.239     0.         Derived from SNL intensity
+     1937.7         0.05      0.03       intensity approximate
+     1959.          0.0010    0.0005     intensity approximate
+     1988.          0.002     0.001      intensity approximate
+     1998.          0.0010    0.0005     intensity approximate
+c    -----------------------------------------------------------
+c    Systematic uncertainty:  30.0 percent for beta decay branch
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has  1 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+      Pa-234   PA234.GAM    NO_FILE     2.41200E+04   0.75   Beta   1.000      0.0    Y
+       U-234   U234.GAM     NO_FILE     7.74400E+12   0.24   Alpha  1.000      0.0    Y

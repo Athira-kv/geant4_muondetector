@@ -1,0 +1,43 @@
+c
+     Data file for   U-232 decay chain - atomic wt is 232.0371
+c    =========================================================
+c
+c    Parent gamma rays
+c    -----------------
+
+     There are    16 parent gamma rays or X-rays
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+       57.81        0.21      0.04
+      129.03        0.075     0.015
+      141.19        5.4E-05   2.3E-05
+      191.29        3.4E-05   0.3E-05
+      209.39        1.3E-05   0.3E-05
+      270.26        0.0038    0.0005
+      328.07        0.0034    0.0007
+      332.48        0.00051   0.00003
+      338.42        4.05E-05  0.14E-05
+      478.20        1.6E-06   0.6E-06
+      503.7         2.0E-05   0.6E-05
+      546.36        1.E-06    0.5E-06    intensity approximate
+      774.0         8.E-06    4.E-06     intensity approximate
+      816.62        2.E-07    1.E-07     intensity approximate
+      840.          0.0       0.0        intensity unknown
+      874.43        5.5E-07   1.1E-07
+c    -----------------------------------------------------------
+c    Systematic uncertainty:   0.0 percent
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has   1 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+       U-232   U232.GAM     NO_FILE     2.17430E+09   1.45   Alpha  1.000      0.0    Y
+      Th-228   TH228.GAM    NO_FILE     6.03700E+07   0.10   Alpha  1.000      0.0    Y

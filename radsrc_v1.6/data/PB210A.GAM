@@ -1,0 +1,19 @@
+c
+     Data file for  Pb-210 decay chain - atomic wt is 209.9842
+c    =========================================================
+c
+c    Parent gamma rays - Secondary (alpha) decay branch
+c    --------------------------------------------------
+
+     There are     0 parent gamma rays or X-rays in the alpha decay branch
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+c    -----------------------------------------------------------
+     Systematic uncertainty:   0.0 percent
+c
+c
+c    Decay chain and daughter information is contained in the
+c    --------------------------------------------------------
+c    primary decay mode file:  PB210B.GAM
+c    ------------------------------------

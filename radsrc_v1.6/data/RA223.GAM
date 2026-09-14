@@ -1,0 +1,88 @@
+c
+     Data file for  Ra-223 decay chain - atomic wt is 223.0185
+c    =========================================================
+c
+c    Parent gamma rays
+c    -----------------
+c
+     There are    61 parent gamma rays or X-rays
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   ----------------------------
+       10.137       0.55      0.05       Rn Ll
+       11.713      10.2       0.5        Rn La
+       12.855       0.145     0.008      Rn Ln
+       14.341       9.8       0.6        Rn Lb
+       16.918       1.94      0.16       Rn Lg
+       31.87        0.00010   0.00002
+       81.067      15.2       0.4        Rn Ka2
+       83.787      25.2       0.6        Rn Ka1
+       94.677       8.90      0.22       Rn Kb1'
+       97.907       2.84      0.08       Rn Kb2'
+      103.85        0.017     0.009
+      106.66        0.022     0.003
+      110.80        0.048     0.004
+      114.5         0.009     0.005
+      122.31        1.190     0.024
+      131.1         0.005     0.003      intensity approximate
+      144.18        3.26      0.07
+      154.18        5.59      0.11
+      158.59        0.688     0.014
+      165.50        0.005     0.003      intensity approximate
+      175.55        0.017     0.004
+      176.8         0.004     0.002
+      177.35        0.047     0.008
+      179.69        0.153     0.012
+      199.43        0.003     0.002      intensity approximate
+      220.38        0.033     0.004
+      245.19        0.009     0.003
+      249.49        0.037     0.009
+      251.12        0.035     0.015
+      251.58        0.031     0.010
+      254.98        0.032     0.010
+      255.74        0.005     0.003      intensity approximate
+      260.40        0.006     0.003      intensity approximate
+      269.39       13.6       0.3
+      288.15        0.154     0.006
+      323.88        3.90      0.09
+      328.49        0.198     0.010
+      333.87        0.099     0.006
+      338.28        2.78      0.07
+      342.90        0.20      0.03
+      361.80        0.043     0.004
+      368.78        0.008     0.004      intensity approximate
+      369.48        0.02      0.01       intensity approximate
+      371.80        0.490     0.012
+      373.3         0.0050    0.0050     intensity upper limit
+      375.98        0.0050    0.0050     intensity upper limit
+      383.12        0.004     0.002      intensity approximate
+      388.3         0.014     0.005
+      391.0         0.003     0.002      intensity approximate
+      393.48        0.0050    0.0050     intensity upper limit
+      430.53        0.019     0.005
+      432.34        0.033     0.008
+      444.94        1.27      0.06
+      481.58        0.0050    0.0050     intensity upper limit
+      487.59        0.010     0.002
+      527.30        0.071     0.005
+      598.69        0.090     0.006
+      609.08        0.063     0.008
+      623.38        0.008     0.004      intensity approximate
+      631.98        0.0050    0.0050     intensity upper limit
+      711.2         0.0035    0.0010
+c    ----------------------------------------------------------------
+     Systematic uncertainty:   0.0 percent
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has   1 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+      Ra-223   RA223.GAM    NO_FILE     9.87600E+05   0.18   Alpha  1.000      0.0    Y
+      Rn-219   RN219.GAM    NO_FILE     3.96000E+00   1.26   Alpha  1.000      0.0    Y

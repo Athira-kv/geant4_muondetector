@@ -1,0 +1,16 @@
+# Microsoft Developer Studio Generated Dependency File, included by cgam.mak
+
+..\..\misc\cgam.cc : \
+	"..\..\libradsrc\batemansolution.h"\
+	"..\..\libradsrc\dbmanager.h"\
+	"..\..\libradsrc\decaycomputer.h"\
+	"..\..\libradsrc\decaymode.h"\
+	"..\..\libradsrc\isotope.h"\
+	"..\..\libradsrc\isotopedata.h"\
+	"..\..\libradsrc\isotopedb.h"\
+	"..\..\libradsrc\isotopemix.h"\
+	"..\..\libradsrc\photoncomputer.h"\
+	"..\..\libradsrc\porting.h"\
+	"..\..\libradsrc\radsource.h"\
+	"..\..\libradsrc\radsrcerr.h"\
+	

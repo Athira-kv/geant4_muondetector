@@ -1,0 +1,7 @@
+#
+# automatically source the right setup script (setup.sh or setup.csh)
+# works for bash, zsh, csh, tcsh
+# 
+# Doug Wright
+
+source setup.`basename $SHELL | grep -q c && echo csh || echo sh`

@@ -1,0 +1,21 @@
+c
+     Data file for  Bi-210 decay chain - atomic wt is 209.9841
+c    =========================================================
+c
+c    Parent gamma rays - Secondary (alpha) decay branch
+c    ---------------------------------------------------
+
+     There are     2 parent gamma rays or X-rays in the alpha decay branch
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+      266.15        4.E-05    2.E-05     intensity approximate
+      305.25        3.E-05    6.E-05     intensity approximate
+c    -----------------------------------------------------------
+     Systematic uncertainty:   7.6 percent
+c
+c
+c    Decay chain and daughter information is contained in the
+c    --------------------------------------------------------
+c    primary decay mode file:  BI210A.GAM
+c    ------------------------------------

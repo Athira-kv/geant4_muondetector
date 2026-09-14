@@ -1,0 +1,68 @@
+c
+     Data file for  Pu-238 decay chain - atomic wt is 238.0496
+c    =========================================================
+c
+c    Parent gamma rays
+c    -----------------
+
+     There are    41 parent gamma rays or X-rays
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+       11.620       0.25      0.03       U Ll
+       13.600       4.2       0.3        U La
+       15.400       0.102     0.011      U La
+       17.128       5.2       0.5        U Lb
+       20.292       1.15      0.13       U Lg
+       43.498       0.0395    0.0008     IAEA energy and intensity
+       62.78        4.E-08    2.E-08     intensity approximate
+       94.66        1.15E-4   5E-6       U ka2
+       98.441       1.85E-4   5E-6       U ka1
+       99.864       0.00710   0.00008    IAEA energy and intensity
+      110.421       2.0E-05   0.5E-05
+      111.3         3.9E-05   0.5E-05
+      114.333       3.9E-05   0.5E-05
+      114.561       1.58E-05  0.5E-05
+      152.680       0.000956  0.000010   IAEA energy and intensity
+      174.52        5.E-09    1.E-09
+      192.74        4.E-08    4.E-08     intensity upper limit
+      200.98        4.1E-06   1.0E-06
+      203.20        1.E-08    0.5E-08    intensity approximate
+      236.03        1.0E-08   0.5E-08    ?
+      258.18        1.19E-07  0.12E-07
+      299.08        1.3E-07   0.3E-07
+      706.02        1.51E-07  0.15E-07
+      708.40        3.8E-07   0.4E-07
+      742.817       7.8E-06   0.5E-06
+      766.412       3.3E-05   0.3E-05
+      783.38        4.6E-08   1.0E-08
+      786.287       4.7E-06   0.3E-06
+      805.87        1.72E-07  0.15E-07
+      808.25        1.06E-06  0.08E-06
+      851.72        2.03E-06  0.17E-06
+      880.53        2.3E-07   0.3E-07
+      883.24        1.11E-06  0.09E-06
+      904.38        1.0E-07   0.2E-07
+      926.71        8.2E-07   0.7E-07
+      942.05        6.4E-07   0.5E-07
+      946.02        1.30E-07  0.11E-07
+      980.39        8.E-08    4.E-08     intensity approximate
+     1001.00        1.37E-06  0.15E-06
+     1041.90        2.89E-07  0.25E-07
+     1085.37        1.05E-07  0.14E-07
+c    -----------------------------------------------------------
+c    Systematic uncertainty:   2.0 percent for beta decay branch
+c
+c
+c    Decay chain and daughter information for both the beta and IT decay modes
+c    -------------------------------------------------------------------------
+c
+     This decay chain has  1 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+      Pu-238   PU238.GAM    NO_FILE     2.76887E+09   0.10   Alpha  1.000      0.0    Y
+       U-234   U234.GAM     NO_FILE     7.74400E+12   0.24   Alpha  1.000      0.0    Y

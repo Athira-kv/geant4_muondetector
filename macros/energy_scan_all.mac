@@ -1,0 +1,33 @@
+/run/initialize
+
+# 0.5 GeV
+/gun/energy 0.5 GeV
+/run/beamOn 50
+
+# 1 GeV
+/gun/energy 1 GeV
+/run/beamOn 50
+
+# 2 GeV
+/gun/energy 2 GeV
+/run/beamOn 50
+
+# 3 GeV
+/gun/energy 3 GeV
+/run/beamOn 50
+
+# 4 GeV
+/gun/energy 4 GeV
+/run/beamOn 50
+
+# 5 GeV
+/gun/energy 5 GeV
+/run/beamOn 50
+
+# 10 GeV
+/gun/energy 10 GeV
+/run/beamOn 50
+
+# 20 GeV
+/gun/energy 20 GeV
+/run/beamOn 50

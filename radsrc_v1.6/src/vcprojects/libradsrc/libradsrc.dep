@@ -1,0 +1,155 @@
+# Microsoft Developer Studio Generated Dependency File, included by libradsrc.mak
+
+..\..\libradsrc\batemansolution.cc : \
+	"..\..\libradsrc\batemansolution.h"\
+	"..\..\libradsrc\dbmanager.h"\
+	"..\..\libradsrc\isotope.h"\
+	"..\..\libradsrc\porting.h"\
+	
+
+..\..\libradsrc\cpp_api.cc : \
+	"..\..\libradsrc\batemansolution.h"\
+	"..\..\libradsrc\cpp_api.h"\
+	"..\..\libradsrc\dbmanager.h"\
+	"..\..\libradsrc\decaycomputer.h"\
+	"..\..\libradsrc\decaymode.h"\
+	"..\..\libradsrc\isotope.h"\
+	"..\..\libradsrc\isotopedata.h"\
+	"..\..\libradsrc\isotopemix.h"\
+	"..\..\libradsrc\photoncomputer.h"\
+	"..\..\libradsrc\porting.h"\
+	"..\..\libradsrc\radsource.h"\
+	"..\..\libradsrc\radsrcerr.h"\
+	
+
+..\..\libradsrc\dbmanager.cc : \
+	"..\..\libradsrc\dbmanager.h"\
+	"..\..\libradsrc\decaymode.h"\
+	"..\..\libradsrc\isotope.h"\
+	"..\..\libradsrc\isotopedata.h"\
+	"..\..\libradsrc\isotopedb.h"\
+	"..\..\libradsrc\legacyglue.h"\
+	"..\..\libradsrc\porting.h"\
+	"..\..\libradsrc\radsrcerr.h"\
+	
+
+..\..\libradsrc\decaycomputer.cc : \
+	"..\..\libradsrc\batemansolution.h"\
+	"..\..\libradsrc\dbmanager.h"\
+	"..\..\libradsrc\decaycomputer.h"\
+	"..\..\libradsrc\decaymode.h"\
+	"..\..\libradsrc\isotope.h"\
+	"..\..\libradsrc\isotopedata.h"\
+	"..\..\libradsrc\isotopedb.h"\
+	"..\..\libradsrc\isotopemix.h"\
+	"..\..\libradsrc\porting.h"\
+	"..\..\libradsrc\radsrcerr.h"\
+	
+
+..\..\libradsrc\decaymode.cc : \
+	"..\..\libradsrc\dbmanager.h"\
+	"..\..\libradsrc\decaymode.h"\
+	"..\..\libradsrc\isotope.h"\
+	"..\..\libradsrc\porting.h"\
+	
+
+..\..\libradsrc\elements.cc : \
+	"..\..\libradsrc\elements.h"\
+	"..\..\libradsrc\porting.h"\
+	
+
+..\..\libradsrc\fortran.cc : \
+	"..\..\libradsrc\cpp_api.h"\
+	"..\..\libradsrc\porting.h"\
+	
+
+..\..\libradsrc\isotope.cc : \
+	"..\..\libradsrc\dbmanager.h"\
+	"..\..\libradsrc\elements.h"\
+	"..\..\libradsrc\isotope.h"\
+	"..\..\libradsrc\porting.h"\
+	
+
+..\..\libradsrc\isotopedb.cc : \
+	"..\..\libradsrc\dbmanager.h"\
+	"..\..\libradsrc\decaymode.h"\
+	"..\..\libradsrc\isotope.h"\
+	"..\..\libradsrc\isotopedata.h"\
+	"..\..\libradsrc\isotopedb.h"\
+	"..\..\libradsrc\porting.h"\
+	"..\..\libradsrc\radsrcerr.h"\
+	
+
+..\..\libradsrc\isotopemix.cc : \
+	"..\..\libradsrc\dbmanager.h"\
+	"..\..\libradsrc\decaymode.h"\
+	"..\..\libradsrc\isotope.h"\
+	"..\..\libradsrc\isotopedata.h"\
+	"..\..\libradsrc\isotopedb.h"\
+	"..\..\libradsrc\isotopemix.h"\
+	"..\..\libradsrc\porting.h"\
+	"..\..\libradsrc\radsrcerr.h"\
+	
+
+..\..\libradsrc\legacydata.cc : \
+	"..\..\libradsrc\dbmanager.h"\
+	"..\..\libradsrc\legacydata.h"\
+	"..\..\libradsrc\legacyfiles.h"\
+	"..\..\libradsrc\porting.h"\
+	
+
+..\..\libradsrc\legacyfiles.cc : \
+	"..\..\libradsrc\dbmanager.h"\
+	"..\..\libradsrc\legacydata.h"\
+	"..\..\libradsrc\legacyfiles.h"\
+	"..\..\libradsrc\porting.h"\
+	"..\..\libradsrc\radsrcerr.h"\
+	
+
+..\..\libradsrc\legacyglue.cc : \
+	"..\..\libradsrc\dbmanager.h"\
+	"..\..\libradsrc\decaymode.h"\
+	"..\..\libradsrc\elements.h"\
+	"..\..\libradsrc\isotope.h"\
+	"..\..\libradsrc\isotopedata.h"\
+	"..\..\libradsrc\isotopedb.h"\
+	"..\..\libradsrc\legacydata.h"\
+	"..\..\libradsrc\legacyfiles.h"\
+	"..\..\libradsrc\legacyglue.h"\
+	"..\..\libradsrc\porting.h"\
+	"..\..\libradsrc\radsrcerr.h"\
+	
+
+..\..\libradsrc\photoncomputer.cc : \
+	"..\..\libradsrc\batemansolution.h"\
+	"..\..\libradsrc\dbmanager.h"\
+	"..\..\libradsrc\decaycomputer.h"\
+	"..\..\libradsrc\decaymode.h"\
+	"..\..\libradsrc\isotope.h"\
+	"..\..\libradsrc\isotopedata.h"\
+	"..\..\libradsrc\isotopedb.h"\
+	"..\..\libradsrc\isotopemix.h"\
+	"..\..\libradsrc\photoncomputer.h"\
+	"..\..\libradsrc\porting.h"\
+	"..\..\libradsrc\radsrcerr.h"\
+	"..\..\libradsrc\spline.h"\
+	
+
+..\..\libradsrc\radsource.cc : \
+	"..\..\libradsrc\batemansolution.h"\
+	"..\..\libradsrc\dbmanager.h"\
+	"..\..\libradsrc\decaycomputer.h"\
+	"..\..\libradsrc\decaymode.h"\
+	"..\..\libradsrc\isotope.h"\
+	"..\..\libradsrc\isotopedata.h"\
+	"..\..\libradsrc\isotopedb.h"\
+	"..\..\libradsrc\isotopemix.h"\
+	"..\..\libradsrc\photoncomputer.h"\
+	"..\..\libradsrc\porting.h"\
+	"..\..\libradsrc\radsource.h"\
+	"..\..\libradsrc\radsrcerr.h"\
+	
+
+..\..\libradsrc\spline.cc : \
+	"..\..\libradsrc\spline.h"\
+	

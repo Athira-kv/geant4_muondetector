@@ -1,0 +1,39 @@
+c
+     Data file for  Tl-207 decay chain - atomic wt is 206.9774
+c    =========================================================
+c
+c    Parent gamma rays
+c    -----------------
+c
+     There are    12 parent gamma rays or X-rays
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   ----------------------------
+        9.185       4.5E-05   0.8E-05    Pb Ll
+       10.541       0.00090   0.00015    Pb La
+       11.349       1.17E-05  0.20E-05   Pb Ln
+       12.703       0.00082   0.00014    Pb Lb
+       14.886       0.00015   0.00003    Pb Lg
+       72.803       0.00150   0.00024    Pb Ka2
+       74.969       0.0025    0.0004     Pb Ka1
+       84.979       0.00089   0.00014    Pb Kb1'
+       87.632       0.00026   0.00004    Pb Kb2'
+      328.08        0.0015    0.0005
+      569.150       0.0010    0.0010     intensity upper limit
+      897.23        0.24      0.04
+c    ----------------------------------------------------------------
+     Systematic uncertainty:   0.0 percent
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has   1 branch ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+      Tl-207   TL207.GAM    NO_FILE     2.86200E+02   0.42   Beta   1.000      0.0    Y
+      Pb-207   PB207.GAM    NO_FILE     0.00000E+00   0.0    Stable 1.000      0.0    Y

@@ -1,0 +1,51 @@
+c
+     Data file for  Th-234 decay chain - atomic wt is 234.0436
+c    =========================================================
+c
+c    Parent gamma rays
+c    -----------------
+
+     There are    24 parent gamma rays or X-rays
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+       11.372       0.23      0.03       Pa Ll
+       13.274       3.9       0.4        Pa La
+       14.953       0.049     0.006      Pa Ln
+       16.572       4.4       0.6        Pa Lb
+       19.839       1.08      0.17       Pa Lg
+       20.019       0.010     0.003
+       29.490       0.00146   0.00010
+       57.75        0.005     0.003      intensity approximate
+       62.862       0.019     0.003
+       63.288       3.6       0.1        SNL intensity
+       74.0         0.0426    0.0021
+       83.31        0.070     0.003
+       87.02        0.0073    0.0010
+       92.279       0.008     0.004      Pa Ka2, intensity approximate
+       92.35        2.72      0.05     
+       92.78        2.69      0.05
+       95.863       0.013     0.007      Pa Ka1, intensity approximate
+      103.35        0.0035    0.0018      intensity approximate
+      103.71        0.006     0.003      intensity approximate
+      108.00        0.0059    0.0005
+      108.166       0.005     0.003      Pa Kb1, intensity approximate
+      111.897       0.0016    0.0008     Pa Kb2, intensity approximate
+      112.80        0.242     0.005
+      184.8         0.012     0.006      intensity approximate
+c    -----------------------------------------------------------
+c    Systematic uncertainty:   7.7 percent
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has  1 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+      Th-234   TH234.GAM    NO_FILE     2.08200E+06   0.12   Beta   1.000      0.0    Y
+     Pa-234m   PA234MB.GAM  PA234MB.BRM 7.02000E+01   0.85   Beta   0.9987     0.02   Y

@@ -1,0 +1,31 @@
+Using radsrc via the MacOSX Finder
+==================================
+
+Double click 'run_radsrc' to begin an interactive session. You will
+be prompted for all of the necessary input information.
+
+Double click 'test_radsrc' to execute a test job that will also
+compare the result to a standard reference.
+
+Detailed documentation is in doc/radsrc.pdf
+
+
+Using radsrc via the command line
+=================================
+
+To run radsrc from the command line, do this:
+
+  bin/radsrc [input file]
+
+The input file is optional. Radsrc reads from standard input,
+so you can also run it like this:
+
+  bin/radsrc < reference/input.txt
+
+If you want to read in part of the problem from a file and continue
+interactively do this:
+
+  cat partial_input.txt - | bin/radsrc
+
+
+For comments or questions, please contact Doug Wright (wright20@llnl.gov).

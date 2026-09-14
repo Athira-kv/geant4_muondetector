@@ -1,0 +1,31 @@
+c
+     Data file for  Bk-249 decay chain - atomic wt is 249.0750
+c    =========================================================
+c
+c    Parent gamma rays - Primary (beta) decay branch
+c    -----------------------------------------------
+
+     There are     0 parent gamma rays
+c
+c    keV         Gamma (%)    +/-      Comment
+c    ----------  ---------  ---------  -----------------------
+c    -----------------------------------------------------------
+c    Systematic uncertainty:   0.0 percent for beta decay
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has  2 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+      Bk-249   BK249A.GAM   NO_FILE     2.76500E+07   1.88   Alpha  0.0000145  5.52   Y
+      Am-245   AM245.GAM    NO_FILE     7.38000E+03   0.49   Beta   1.0        0.0    Y
+c
+     Branch 2:    2 members -----
+      Bk-249   BK249B.GAM   NO_FILE     2.76500E+07   1.88   Beta   0.9999855  0.0    Y
+      Cf-249   CF249.GAM    NO_FILE     1.10640e+10   0.60   Alpha  1.0        0.0    Y

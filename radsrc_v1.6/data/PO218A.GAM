@@ -1,0 +1,31 @@
+c
+     Data file for  Po-218 decay chain - atomic wt is 218.0090
+c    =========================================================
+c
+c    Parent gamma rays - Primary (alpha) decay branch
+c    ------------------------------------------------
+
+     There are     0 parent gamma rays or X-rays in the alpha branch
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+c    -----------------------------------------------------------
+c    Systematic uncertainty:   0.0 percent for the alpha decay branch
+c
+c
+c    Decay chain and daughter information for both alpha and beta decay modes
+c    ------------------------------------------------------------------------
+c
+     This decay chain has  2 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+      Po-218   PO218A.GAM   NO_FILE     1.86600E+02   0.64   Alpha  0.99980    0.002  Y
+      Pb-214   PB214.GAM    NO_FILE     1.60800E+03   3.36   Beta   1.000      0.0    Y
+c
+     Branch 2:    2 members -----
+      Po-218   PO218B.GAM   NO_FILE     1.86600E+02   0.64   Beta   0.00020   10.0    Y
+      At-218   AT218A.GAM   NO_FILE     1.60000E+00  25.00   Alpha  0.999      0.0    Y

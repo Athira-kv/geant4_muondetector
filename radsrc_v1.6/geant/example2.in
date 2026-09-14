@@ -1,0 +1,4 @@
+/radsrc/file problem.in
+
+/run/beamOn 10000
+exit

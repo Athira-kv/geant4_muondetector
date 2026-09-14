@@ -1,0 +1,45 @@
+Directions for MCNPX build with RadSrc library
+(tested with v2.5.0 and v2.6b)
+
+(0) Build mcnpx from source code
+
+(1) Download and install 'libradsrc.a'
+
+(2) Copy source.F to /path_to_mcnpx/src/mcnpx/mcnpf
+
+(3) Append the following line to /path_to_mcnpx/src/mcnpx/Makefile.h
+
+    XLIBS := ${XLIBS} -L$(RADSRC_HOME) -lradsrc  -lstdc++
+
+(4) Set environment variables for RadSrc 
+    (works for both csh or sh type shells)
+  
+    source /path_to_RadSrc/setup
+
+(5) Rebuild mcnpx with 'make install'
+
+---------------------------------------------------
+Directions for running MCNPX with RadSrc library :
+
+(1) Create 'problem.in' to specify RadSrc parameters.
+    At run time mcnpx will look for this file in the current directory. 
+
+(2) Set environment variables for RadSrc 
+    (works for both csh or sh type shells)
+
+    source /path_to_RadSrc/setup
+  
+(3) Add 'IDUM n' to mcnpx input deck, where n is the internal cell 
+    number in which cosmic rays will be generated.
+
+----------------------------------------------------
+The shell script 'test_radsrc' shows an example set of commands to run
+a test job and compare the output with a reference. Edit this script to
+match your local setup. Note that the example uses RDUM to specify the 
+radius of the depleted uranium ball.
+
+Example files:
+  balltest
+  problem.in
+
+mcnpx inp=balltest

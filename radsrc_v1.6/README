@@ -1,0 +1,67 @@
+****
+*
+* Installation
+*
+****
+
+Execute 'make' to compile the RadSrc library (lib/libradsrc.a) and
+standalone application (bin/radsrc).
+
+The default compiler system is GNU. You can select Intel or Portland
+Group by including 'intel' or 'portland' as a target to the makefile.
+
+Supported platforms are:
+  GNU gcc, g++, g77
+  Intel icc, icpc, ifort
+  Portland Group pgc, pgCC, pgf90 or pgf77
+
+****
+*
+* Execution
+*
+****
+
+By default, the radsrc program (bin/radsrc) expects to find the
+database in the location specified by the RADSRC_DATA environment
+variable if present, or in the "data" subdirectory of your current
+directory.
+
+Execute the environment shell script (setup) to automatically setup
+the environment variables RADSRC_HOME and RADSRC_DATA:
+
+  source [PATH TO RADSRC DIRECTORY]/setup
+
+The above command works for csh and sh type shells.
+
+RadSrc will output the complete list of isotopes present in the aged
+sample, and their concentrations (in absolute fractions, not percent).
+It will also list gamma and x-ray emissions, first sorted by order,
+then again sorted by intensity. These will be written to the file
+output.lin. Additional files for MCNP/X (output.mci) or COG
+(output.cog) will also be written if requested. You will be presented
+with several options for preparing these input decks.
+
+
+****
+*
+* Directory Structure
+*
+****
+
+bin   Interactive application are installed here
+data  Decay and line database packaged to be compatiable with the legacy code.
+doc   Documentation
+lib   Library for linking with external codes are installed here
+test  Test programs and output reference files
+
+src   Source code
+  libradsrc  Physics kernel for calculating decayed mixture and line spectra.
+  radsrc     Interactive program
+  misc       Examples demonstrating C++ API (cgam.cc) or FORTRAN API (fgam.F)
+
+cog      COG interface example
+geant    GEANT4 interface example
+mcnp     MCNP interface example
+mcnpx    MCNPX interface example
+
+

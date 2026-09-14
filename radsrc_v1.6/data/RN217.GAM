@@ -1,0 +1,27 @@
+c
+     Data file for  Rn-217 decay chain - atomic wt is 217.0039
+c    =========================================================
+c
+c    Parent gamma rays
+c    -----------------
+
+     There are     0 parent gamma rays or X-rays
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+c    -----------------------------------------------------------
+c    Systematic uncertainty:   0.0 percent
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has   1 branch ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+      Rn-217   RN217.GAM    NO_FILE     5.40000E-04   9.26   Alpha  1.0        0.0    Y
+      Po-213   PO213.GAM    NO_FILE     4.20000E-06  19.05   Alpha  1.0        0.0    Y

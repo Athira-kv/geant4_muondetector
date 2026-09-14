@@ -1,0 +1,92 @@
+sample pinex
+$  The device is assumed to be at (0,0,0) and the line-of-sight
+$  runs along the z-axis
+
+basic
+  neutron
+  photon
+  cm
+  mev
+
+MIX
+
+$   Density breakdowns for component materials (gm/cc):
+
+    nlib ENDL90  $  use ENDL-90 neutron database only (!)
+    usezeroxs
+
+    mat  =   1    air      0.001290  $  Air @ 20° C
+
+    mat  =   2    H        0.132221  $  Poly (0.92 gm/cc)
+                  C        0.787779
+
+    mat  =   3    Pb      11.330000  $  Lead (11.33 gm/cc)
+
+    mat  =   4    Fe       7.860000  $  Iron (7.86 gm/cc)
+
+    mat  =   5    W       19.300000  $  Tungsten (19.3 gm/cc)
+
+    mat  =   6    Au      18.850000  $  Gold (18.85 gm/cc)
+
+    mat  =   7    H        0.087503  $  BC-408 (1.03 gm/cc)
+                  C        0.944497
+
+    mat  =   8    h1 0.0132   o16 1.1658  na 0.0488  mg 0.0057  al 0.1070
+                  si 0.07366  k 0.0448  ca 0.1942  fe 0.0287
+                                   $ ORNL composition for concrete (stemming) 
+
+    mat  =   9    ss304    7.78      $ stainless steel for pipe
+
+    mat  =  10    U238       18.95       $
+
+$    mat  =  10    U238       0.00001895       $
+
+geometry
+
+    sector 1 chamber -1 +2
+    sector 2 testbal -2
+    fill   1
+    boundary vacuum +1
+
+    picture cs m color 10.0 0. -10.0  -10. 0. -10.  -10. 0. 10.
+
+surfaces
+  1 box 200. 200. 200.        $ problem boundary
+  2 sphere 5.01                 $ lead ball
+ 
+ASSIGN-ML
+	10  2
+      / 1  1
+    
+ASSIGN-MC
+
+     1    Cyan      $  Air
+     2    Tan       $  Poly
+     3    Purple    $  Lead
+     4    Moss      $  Iron
+     5    Rose      $  Tungsten
+     6    Yellow    $  Gold
+     7    Lime      $  BC-408
+     0    White     $  void
+    -1    Black     $  absorber
+
+source
+  usrsor IsoP photon 1.0 0. 0. 0. 14. 0.
+  npart 500
+$  define p 1
+$    sphere 0. 0. 0. 3.0
+$  define a 1
+$    0. 0. 1.
+$	fixed
+$       isotropic
+$    imp -1. .05 .9998 .95 1.0
+$  define e 1
+$    neutron line 14.0 1.0
+$  inc 1  e 1  p 1 a 1
+
+detector
+  number=1
+  boundary-crossing counts 1 2 78.85
+	bin energy photon 0. 1.5
+	bin energy photon 151 [0. I 1.5]
+end

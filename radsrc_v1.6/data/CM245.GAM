@@ -1,0 +1,54 @@
+c
+     Data file for  Cm-245 decay chain - atomic wt is 245.0655
+c    =========================================================
+c
+c    Parent gamma rays
+c    -----------------
+
+     There are    27 parent gamma rays
+c
+c    keV         Gamma (%)    +/-      Comment
+c    ----------  ---------  ---------  -----------------------
+       12.124      3.         1.5      Pu Ll, intensity approximate
+       14.262     51.        26.       Pu La, intensity approximate
+       16.333      1.0        0.5      Pu Ln, intensity approximate
+       18.103     56.        28.       Pu Lb, intensity approximate
+       21.591     12.         6.       Pu Lg, intensity approximate
+       41.95       0.350      0.017
+       53.74       0.067      0.004
+       56.81       0.0361     0.0019
+       65.36       0.011      0.004
+       69.17       0.007      0.003
+       79.25       0.150      0.009
+       89.58       0.022      0.003
+       93.82       0.036      0.004
+       99.522     21.1        1.2
+      103.734     33.6        2.0
+      116.930     12.2        0.7
+      120.974      4.2        0.3
+      132.99       2.77       0.14
+      136.06       0.112      0.007
+      139.81       0.0057     0.0019
+      161.6        0.009      0.004
+      165.3        0.009      0.004
+      174.94       9.5        0.0      +/- unknown, reference intensity?
+      185.8        0.010      0.004
+      189.82       0.193      0.012
+      210.6        0.0066     0.0019
+      232.7        0.015      0.004 
+c    -----------------------------------------------------------
+c    Systematic uncertainty:   7.0 percent
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has   1 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+      Cm-245   CM245.GAM    NO_FILE     2.68200E+11   1.18   Alpha  1.0        0.0    Y
+      Pu-241   PU241A.GAM   NO_FILE     4.54400E+08   1.39   Alpha  0.0000241  1.66   Y

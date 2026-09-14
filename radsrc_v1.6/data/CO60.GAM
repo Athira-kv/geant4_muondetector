@@ -1,0 +1,33 @@
+c
+     Data file for  Co-60  decay chain - atomic wt is  59.9300
+c    =========================================================
+c
+c    Parent gamma rays
+c    -----------------
+
+     There are     6 parent gamma rays and X-rays
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+      346.75        0.0076    0.0005
+      826.33        0.0075    0.0007
+     1173.237      99.90      0.02
+     1332.501      99.9824    0.0005
+     2158.86        0.00114   0.00011
+     2505.738       2.4E-06   0.4E-06
+c    -----------------------------------------------------------
+c    Systematic uncertainty:   0.0 percent
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has   1 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+       Co-60    CO60.GAM    NO_FILE     1.66373E+08   0.02   Beta   1.000      0.0    Y
+       Ni-60    NI60.GAM    NO_FILE     0.00000E+00   0.00   Stable 1.000      0.0    Y

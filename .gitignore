@@ -1,0 +1,7 @@
+build/
+*.log
+.nfs*
+*.root
+*.gas
+*.png
+*~

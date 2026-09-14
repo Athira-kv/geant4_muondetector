@@ -1,0 +1,31 @@
+c
+     Data file for  At-219 decay chain - atomic wt is 219.0113
+c    =========================================================
+c
+c    Parent gamma rays - Primary (alpha) decay branch
+c    ------------------------------------------------
+c
+     There are     0 parent gamma rays or X-rays in the alpha branch
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   ----------------------------
+c    ----------------------------------------------------------------
+     Systematic uncertainty:   0.0 
+c
+c
+c    Decay chain and daughter information (alpha and beta branches)
+c    --------------------------------------------------------------
+c
+     This decay chain has   2 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+      At-219   AT219A.GAM   NO_FILE     5.40000E+00  11.11   Alpha  0.97       1.0    Y
+      Bi-215   BI215.GAM    NO_FILE     4.44000E+02   8.11   Beta   1.000      0.0    Y
+c
+     Branch 2:    2 members -----
+      At-219   AT219B.GAM   NO_FILE     5.40000E+00  11.11   Beta   0.03      33.3    Y
+      Rn-219   RN219.GAM    NO_FILE     3.96000E+00   1.26   Alpha  1.000      0.0    Y

@@ -1,0 +1,35 @@
+c
+     Data file for  Pu-242 decay chain - atomic wt is 242.0587
+c    =========================================================
+c
+c    Parent gamma rays
+c    -----------------
+
+     There are     8 parent gamma rays or X-rays
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+       11.620       0.20      0.05       U Ll
+       13.600       3.3       0.7        U La
+       15.400       0.081     0.018      U Ln
+       17.128       4.1       0.9        U Lb
+       20.292       0.91      0.21       U Lg
+       44.915       0.036     0.0        Reference intensity?
+      103.50        0.0078    0.0008
+      158.80        0.00045   0.00015
+c    -----------------------------------------------------------
+c    Systematic uncertainty:  14.0 percent
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has  1 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+      Pu-242   PU242.GAM    NO_FILE     1.18750E+13   0.53   Alpha  1.000      0.0    Y
+       U-238   U238.GAM     NO_FILE     1.41000E+17   0.11   Alpha  1.000      0.0    Y

@@ -1,0 +1,92 @@
+c
+     Data file for  Ac-225 decay chain - atomic wt is 225.0232
+c    =========================================================
+c
+c    Parent gamma rays
+c    -----------------
+
+     There are    65 parent gamma rays or X-rays
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+       10.381       0.43      0.10       Fr Ll
+       10.67        0.0       0.0        intensity unknown
+       12.017       7.8       1.6        Fr La
+       12.53        0.0       0.0        intensity unknown
+       13.255       0.16      0.04       Fr Ln
+       14.772       9.6       2.1        Fr Lb
+       17.449       2.1       0.5        Fr Lg
+       25.98        0.0015    0.0008     intensity approximate
+       36.65        0.015     0.008      intensity approximate
+       38.51        0.009     0.005      intensity approximate
+       49.20        0.0108    0.00517
+       53.82        0.019     0.004
+       57.77        0.0042    0.0013
+       62.93        0.55      0.05
+       64.23        0.056     0.006
+       69.85        0.0051    0.0012
+       70.92        0.010     0.005      intensity approximate
+       71.71        0.0147    0.0021
+       73.60        0.017     0.009      intensity approximate
+       73.84        0.324     0.025
+       74.90        0.036     0.016
+       82.9         0.15      0.04
+       83.229       1.26      0.13       Fr Ka2
+       86.105       2.08      0.22       Fr Ka1
+       87.39        0.29      0.03
+       94.87        0.16      0.06
+       96.17        0.030     0.015      intensity approximate
+       97.272       0.75      0.08       Fr Kb1'
+       99.58        0.63      0.14
+       99.82        1.68      0.20
+      100.599       0.240     0.025      Fr Kb2'
+      100.88        0.06      0.03
+      103.44        0.009     0.003
+      108.36        0.27      0.03
+      111.56        0.327     0.024
+      119.92        0.06      0.01
+      123.76        0.19      0.02
+      124.81        0.05      0.01
+      126.23        0.014     0.004
+      129.19        0.0043    0.0016
+      135.01        0.04      0.01
+      138.2         0.02      0.01       intensity approximate
+      145.15        0.126     0.025
+      150.08        0.67      0.05
+      152.64        0.037     0.019      intensity approximate
+      153.93        0.153     0.023
+      157.24        0.31      0.03
+      170.91        0.009     0.003
+      178.39        0.016     0.006
+      186.12        0.02      0.01       intensity approximate
+      187.99        0.46      0.05
+      195.75        0.145     0.020
+      198.72        0.02      0.01       intensity approximate
+      216.2         0.34      0.10
+      216.86        0.42      0.08       ?
+      224.64        0.08      0.01
+      240.76        0.013     0.005
+      248.7         0.02      0.01       ?
+      253.51        0.100     0.010
+      279.27        0.035     0.011
+      285.5         0.010     0.005      intensity approximate
+      452.43        0.11      0.01  
+      480.5         0.03      0.01
+      513.5         0.010     0.005      intensity approximate
+      526.03        0.010     0.005      intensity approximate
+c    -----------------------------------------------------------
+c    Systematic uncertainty:   0.0 percent
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has   1 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+      Ac-225   AC225.GAM    NO_FILE     8.64000E+05   1.00   Alpha  1.0        0.0    Y
+      Fr-221   FR221.GAM    NO_FILE     2.94000E+02   4.08   Alpha  1.0        0.0    Y

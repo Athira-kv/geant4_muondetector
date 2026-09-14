@@ -1,0 +1,89 @@
+Version 1.6     12-29-2014
+  - Corrected Co-60 lifetime (was factor of ten too short)
+  - Modified some source files to assure there are no compiler warning messages
+  - Modified source files, and a shell file, to compile and run in Ubuntu Linux
+  - Modified geant/ExN01PhysicsList.cc to be compatible with Geant4.9.5
+  - Modified geant/GNUmakefile to assure static libraries are built
+  - Added detail to the RadSrc Application section of the radsrc document
+  - Merged interface guide document (radsrc_interface) into radsrc document
+  - Improved the validation of the isotope and range input parameters
+  - The RadSrc Application verifies total isotope concentration is in the
+        interval [99.9%, 100%]
+  - Changed the RadSrc Application so that if the input option "brem off" is 
+        specified, the user is not asked to provide Bremsstrahlung binning.
+  - Improvements to MacOS run scripts (allow blanks in path and keep window open)
+  - In MCNP source decks, removed the space between SI/SP/SC and the number
+  - Corrected problem that the discrete gamma line energies were not always
+        sorted for MCNP source decks.
+  - To preserve the relative order of elements with equivalent values,
+        substituted stable_sort for the standard sort for printing lines of
+        energy and intensity
+  - Removed obsolete tags from the file doc/doxygen/Doxyfile
+  - Tested RadSrc on the following platforms
+        Mac OS X 10.9 Mavericks, Geant4-10.0.2
+        Ubuntu 14.04.1 LTS, Geant4-10.0.2
+        Red Hat Enterprise Linux Server release 6.5 (Santiago), Geant4-9.5.p02
+
+Version 1.5     1-27-2008
+  - Modified environment setup scripts
+  - Available isotope list read from file data/Index, instead of hard-coded
+  - Removed extraneous decay info from data (.GAM) files
+  - Modified .GAM files to remove redundant branching info
+
+Version 1.4     11-07-2007
+  - More detailed mcnp and mcnpx example and documentation
+  - radsrc application
+    - Default binning now from files in lib not hardcoded
+    - Will search for default files in $RADSRC_HOME/lib and ./lib
+    - Line selection is now done within an energy window of 0.1 keV
+
+Version 1.3     10-29-2007
+  -  radsrc application
+     - Added feature to save input definition to a file suitable for
+       reading back in.
+     - Added option to accept defaults for energy range of output lines.
+     - Windows XP and MacOSX native version (can double click) with
+       test scripts, reference output, and zip archive.
+  -  Makefile improvements and target to compile Windows XP version: mingw.
+  -  Automated validation against reference output on unix, cygwin, and mingw.
+  -  Changed application name to radsrc (was gsource).
+  -  Added API function to render sampling from bremmstrahlung optional.
+  -  Removed ability to copy CRadSource classes, as the copy of CPhotonComputer
+     is not fully implemented. Copy will be restored when it is implemented if
+     it is practical.
+  -  Added new keywords to the config file parser: brem on|off and
+     range <min> <max>.
+
+Version 1.2     3-12-2007
+  -  Large scale refactoring into decay and photon computational objects.
+  -  More in line with C++ and OOP style conventions.
+  -  Functional form of time-dependent functions computed and published
+     via member function. Evaluation of function is delayed.
+  -  Isotope concentrations and photon intensities are now HighPrecisionType
+     variables, as defined in porting.h.
+  -  Iterator for photon lists provided, which dereferences to an
+     accessor object that provides a great deal of information about
+     the isotopes that produce each line.
+  -  Database management object instantiates isotope database of different
+     types (potentially) and different locations.
+  -  User no longer has to explicitly configure for 64-bit architectures
+  -  Makefile supports multiple compilers and architectures with command
+     line arguments
+  -  GSource now accepts a batch mode.
+  -  GSource line output enhanced with more information.
+  -  Duplicate data in PA234MB corrected.
+   
+Version 1.1.1   1-17-2007
+  -  Bug fix release.
+  -  Added Doxygen configuration file.
+
+Version 1.1     10-7-2006
+  -  Added Photon & 4-Vector Generation, given a RNG function pointer.
+  -  Library can obtain problem specification from the file specified
+     by RADSRCCONFIG environment variable, or any istream.
+  -  Problem specification can be written to a CHARACTER*N variable
+     for output by FORTRAN calling routine.
+  -  Gsource MCI output file now more closely conforms to MCNP input
+     specifications and GAMGEN output.
+  -  GSource now outputs a listing of all lines.
+  -  Added Java Native Interface wrapper for developers, not production ready

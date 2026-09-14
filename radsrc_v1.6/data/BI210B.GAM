@@ -1,0 +1,31 @@
+c
+     Data file for  Bi-210 decay chain - atomic wt is 209.9841
+c    =========================================================
+c
+c    Parent gamma rays - Primary (beta) decay branch
+c    -----------------------------------------------
+
+     There are     0 parent gamma rays or X-rays in the beta decay branch
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+c    -----------------------------------------------------------
+     Systematic uncertainty:   0.0 percent
+c
+c
+c    Decay chain and daughter information for both alpha and beta branches
+c    ---------------------------------------------------------------------
+c
+     This decay chain has   2 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+      Bi-210   BI210B.GAM   NO_FILE     4.33100E+05   0.10   Beta   1.000      0.0    Y
+      Po-210   PO210.GAM    NO_FILE     1.19557E+07   0.001  Alpha  1.000      0.0    Y
+c
+     Branch 2:    2 members -----
+      Bi-210   BI210A.GAM   NO_FILE     4.33100E+05   0.10   Alpha  1.32E-06   7.58   Y
+      Tl-206   TL206.GAM    NO_FILE     2.52000E+02   0.48   Beta   1.000      0.0    Y

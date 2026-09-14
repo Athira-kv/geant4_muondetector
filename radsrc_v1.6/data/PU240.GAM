@@ -1,0 +1,42 @@
+c
+     Data file for  Pu-240 decay chain - atomic wt is 240.0538
+c    =========================================================
+c
+c    Parent gamma rays
+c    -----------------
+
+     There are    15 parent gamma rays or X-rays
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+       45.244       0.0450    0.0009
+       94.66        6.8E-05   0.6E-05    U Ka2, exp. value
+       98.441       1.0E-04   0.05E-05   U Ka1, exp. value
+      104.244       0.00696   0.00014
+      110.421       1.18E-05  0.4E-05
+      111.3         3.6E-05   0.4E-05    U Kb1', exp. value
+      114.866       1.0E-05   0.5E-05    U Kb2', intensity approximate
+      160.280       0.00042   0.00008
+      212.46        3.0E-05   0.6E-05    exp. value
+      538.11        1.2E-07   0.3E-07
+      642.5         1.26E-5   0.2E-05    exp. value
+      687.59        2.7E-06   0.6E-06
+      698.8         3.E-08    3.E-08     intensity upper limit
+      873.94        5.8E-07   0.6E-07
+      967.01        5.E-08    5.E-08     intensity upper limit
+c    -----------------------------------------------------------
+c    Systematic uncertainty:   1.0 percent
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has   1 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+      Pu-240   PU240.GAM    NO_FILE     2.07113E+11   0.11   Alpha  1.000      0.0    Y
+       U-236   U236.GAM     NO_FILE     7.39080E+14   0.13   Alpha  1.000      0.0    Y

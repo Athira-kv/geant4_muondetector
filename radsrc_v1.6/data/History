@@ -1,0 +1,56 @@
+If an isotope has one branch (alpha or beta only), then there is one file. If there is both alpha and beta branch, then there are two files. One of the files (called the "primary") must have the branch information. It does not matter which one is considered primary. Each file contains the gamma's emitted for that branch. The file name convention is to append A (for alpha) or B (for beta) branch, but only in the case that there are two branches.
+
+There is some duplication:
+	1. The atomic weight appears in both A and B files (if they exist).
+	2. The Ê2nd member of a branch (i.e. the destination isotope of the decay)
+	contains the half life and other info that is repeated in the .GAM file for that branch.
+	The only info needed for the 2nd member is the file name, so you can put null info in
+	the other fields.
+
+The data originally come from the 1986 Table of Radioactive Isotopes by E. Browne, R.B. Firestone and V.S. Shirley, with a few specific updates.
+
+bp = Bert Pohl, LLNL
+
+####################### LOG ####################################
+
+11-8-11 D. M. Wright
+Corrected Co-60 lifetime (was factor of ten too short)
+
+1-27-08
+Removed extraneous decay info from secondary files(info lives in primary):
+AT217B BI210A BI211B BI212A FR223A PB210A PO215B
+
+Updated Index file to include all isotope primary files
+
+Corrected format of CO60.GAM and NI60.GAM
+
+Files not used, removed: 
+PB210.GAM, AT218.GAM (separate primary exists)
+
+11-17-06
+PA234MB.BRM
+Converted file to unix format (removed Ctrl-M from end of line).
+
+PU239.GAM
+Made change to single line found in Bert Pohl version of the data.
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+Change from:
+     624.80        4.0E-07   0.2E-07    combined doublet intensity
+To:
+     624.8         4.0E-07   0.2E-08    combined doublet intensity (Changed from 4.0E-07 11-17-06)
+Note that this only changes the intensity error.
+
+9-24-06
+PB210B.GAM modified to put decay back in original (5-11-05) order.
+
+8-8-06
+Starting point was Tom Gosnell MacOSX data delivered to us 5-11-05.
+
+Fixed error in BI210 beta decay.  Half life, half life measurement
+error, particle type, and branching fraction where wrong (looks like
+it was cut and paset error from Tl entry).
+
+PB210B.GAM modified to change the order of the three branches. This did
+not change the physics and was only for a study for the legacy code
+comparison.

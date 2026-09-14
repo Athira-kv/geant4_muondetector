@@ -1,0 +1,58 @@
+c
+     Data file for  Rn-219 decay chain - atomic wt is 219.0095
+c    =========================================================
+c
+c    Parent gamma rays
+c    -----------------
+c
+     There are    31 parent gamma rays or X-rays
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   ----------------------------
+        9.658       0.0211    0.0023     Po Ll
+       11.119       0.41      0.03       Po La
+       12.085       0.0075    0.0006     Po Ln
+       13.495       0.45      0.04       Po Lb
+       15.856       0.091     0.009      Po Lg
+       76.858       0.52      0.03       Po Ka2
+       79.290       0.87      0.05       Po Ka1
+       89.639       0.310     0.019      Po Kb1'
+       92.673       0.094     0.006      Po Kb2'
+      115.3         0.0033    0.0015     ?
+      130.57        0.126     0.008
+      221.9         0.030     0.004      ?
+      271.13        9.9       0.0        Reference intensity?
+      293.8         0.065     0.005
+      324.1         0.006     0.006      intensity upper limit
+      337.3         0.008     0.008      intensity upper limit
+      372.0         0.010     0.010      intensity upper limit
+      376.9         0.007     0.004      intensity approximate
+      379.4         0.00030   0.00015    intensity approximate
+      387.9         0.0004    0.0002     intensity approximate
+      401.70        6.64      0.21
+      437.9         0.028     0.028      intensity upper limit
+      515.7         0.04      0.02       intensity approximate
+      540.1         0.006     0.003      intensity approximate
+      563.1         0.0030    0.0030     intensity upper limit
+      608.5         0.004     0.002      intensity approximate
+      666.          0.008     0.008      intensity upper limit
+      676.4         0.006     0.003      intensity approximate
+      834.2         0.0010    0.0005     intensity approximate
+      887.7         0.0015    0.0007
+     1055.8         0.0006    0.0003     intensity approximate
+c    ----------------------------------------------------------------
+     Systematic uncertainty:   5.0 percent
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has   1 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+      Rn-219   RN219.GAM    NO_FILE     3.96000E+00   1.26   Alpha  1.000      0.0    Y
+      Po-215   PO215A.GAM   NO_FILE     1.78000E-03   0.22   Alpha  1.000      0.0    Y

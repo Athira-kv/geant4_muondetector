@@ -1,0 +1,62 @@
+c
+     Data file for   U-237 decay chain - atomic wt is 237.0487
+c    =========================================================
+c
+c    Parent gamma rays
+c    -----------------
+
+     There are    35 parent gamma rays or X-rays
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+       11.871       1.5       0.3        Np Ll
+       13.804       0.101     0.004
+       13.927      25.        4.         Np La
+       15.861       0.48      0.07       Np Ln
+       17.592      30.        5.         Np Lb
+       20.990       7.2       1.2        Np Lg
+       26.3445      2.29      0.13
+       33.1920      0.11      0.05
+       42.64        0.0       0.0        intensity unknown
+       43.415       0.033     0.003
+       51.013       0.20      0.09
+       59.536      32.8       1.8
+       64.817       1.16      0.12
+       69.760       0.0       0.0        intensity unknown
+       75.83        0.0       0.0        intensity unknown
+       97.071      16.        3.         Np Ka2
+      101.066      25.2       4.         Np Ka1
+      113.3        3.04       0.09
+      114.23        5.85      1.5        Np Kb1'
+      114.95        0.335     0.0        intensity unknown
+      117.340       0.79      0.5        Np Kb4
+      117.58        1.56      0.5        Np Kb2
+      118.43        0.823     0.05
+      164.58       1.84      0.06
+      208.000      21.7       0.0        +/- unknown, reference intensity?
+      221.73       0.0212     0.0013
+      234.24      0.0194     0.0013
+      267.54      0.712      0.014
+      292.76       0.0027     0.0004
+      332.354      1.20       0.05
+      335.405      0.097      0.005
+      337.750      0.0086     0.0007
+      340.45       1.65E-3    0.0007
+      368.605      0.0429     0.0024
+      370.934      0.1103     0.006
+c    -----------------------------------------------------------
+c    Systematic uncertainty:  11.0 percent
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has   1 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+       U-237   U237.GAM     NO_FILE     5.83200E+05   0.15   Beta   1.0        0.0    Y
+      Np-237   NP237.GAM    NO_FILE     6.75300E+13   0.47   Alpha  1.0        0.0    Y

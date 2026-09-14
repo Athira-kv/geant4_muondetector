@@ -1,0 +1,29 @@
+# List of files that contain daughter isotope information
+# Other files that contain only line information will be named as
+# daughter isotope files in these files below
+# Do not include the .GAM extension
+# Separate filenames by whitespace (filenames may not contain whitespace)
+# Case matters on case-sensitive filesystems
+
+AC225 AC227B AC228B 
+AM241 AM243 AM245
+AT215 AT217A AT218A AT219A
+BK249B
+BI210B BI211A BI212B BI213B BI214B BI215
+CF249 CF253B
+CM244 CM245 CM249
+CO60
+ES253
+FR221 FR223B FR224
+HG206
+NI60
+NP237 NP239
+PA231 PA233 PA234 PA234MB 
+PB209 PB210B PB211 PB212 PB214 
+PO210 PO211 PO212 PO213 PO214 PO215A PO216 PO218A 
+PU236 PU238 PU239 PU240 PU241B PU242 
+RA223 RA224 RA225 RA226 RA228
+RN217 RN218 RN219 RN220 RN222 
+TH227 TH228 TH229 TH230 TH231 TH232 TH234 
+TL206 TL207 TL208 TL209 TL210
+U232 U233 U234 U235 U236 U237 U238 

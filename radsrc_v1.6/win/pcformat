@@ -1,0 +1,17 @@
+#!/bin/sh
+#
+# pcformat file1 file2 ...
+#
+# Convert given (ascii) reference files to PC format for exponents.
+# This is usesd to convert the reference output files generated on 
+# unix into a form suitable for comparing to output generated on the 
+# pc
+#
+# Doug Wright
+
+for file
+do 
+mv $file tmp
+cat tmp | perl -pe 's/e-/e-0/g' | perl -pe 's/E-/E-0/g' | perl -pe 's/$/\r/' > $file
+done
+

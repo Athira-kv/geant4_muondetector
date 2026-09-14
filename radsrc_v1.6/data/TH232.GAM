@@ -1,0 +1,29 @@
+c
+     Data file for  Th-232 decay chain - atomic wt is 232.0380
+c    =========================================================
+c
+c    Parent gamma rays
+c    -----------------
+
+     There are     2 parent gamma rays or X-rays
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+       59.0         0.190     0.025
+      124.          0.043     0.022      intensity approximate
+c    -----------------------------------------------------------
+c    Systematic uncertainty:   0.0 percent
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has   1 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+      Th-232   TH232.GAM    NO_FILE     4.43400E+17   0.43   Alpha  1.000      0.0    Y
+      Ra-228   RA228.GAM    NO_FILE     1.81500E+08   0.52   Beta   1.000      0.0    Y

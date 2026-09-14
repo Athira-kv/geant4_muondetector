@@ -1,0 +1,40 @@
+c
+     Data file for  Ra-224 decay chain - atomic wt is 224.0202
+c    =========================================================
+c
+c    Parent gamma rays
+c    -----------------
+
+     There are    13 parent gamma rays and X-rays
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+       10.137       0.0073    0.0022     Rn Ll
+       11.713       0.13      0.04       Rn La
+       12.855       0.0034    0.0010     Rn Ln
+       14.336       0.18      0.05       Rn Lb
+       16.881       0.039     0.012      Rn Lg
+       81.067       0.12      0.04       Rn Ka2
+       83.787       0.20      0.06       Rn Ka1
+       94.677       0.072     0.020      Rn Kb1'
+       97.907       0.023     0.007      Rn Kb2'
+      240.76        3.9       1.1
+      290.          0.009     0.005      intensity approximate
+      409.3         0.004     0.002      intensity approximate
+      650.1         0.007     0.004      intensity approximate
+c    -----------------------------------------------------------
+c    Systematic uncertainty:   0.0 percent
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has   1 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+      Ra-224   RA224.GAM    NO_FILE     3.16200E+05   1.09   Alpha  1.000      0.0    Y
+      Rn-220   RN220.GAM    NO_FILE     5.56000E+01   0.18   Alpha  1.000      0.0    Y

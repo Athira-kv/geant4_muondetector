@@ -1,0 +1,20 @@
+c
+     Data file for Pa-234m decay chain - atomic wt is 234.0434
+c    =========================================================
+c
+c    Parent gamma rays - Secondary (IT) decay branch
+c    -----------------------------------------------
+c
+     There is      1 parent gamma ray in the IT branch
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+       73.90        0.0109    0.0005     IT
+c    -----------------------------------------------------------
+c    Systematic uncertainty:  17.0 percent for IT decay branch
+c
+c
+c    Decay chain and daughter information is contained in the
+c    --------------------------------------------------------
+c    Primary decay mode gamma file: PA234MB.GAM
+c    ------------------------------------------

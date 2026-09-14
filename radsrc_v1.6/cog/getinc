@@ -1,0 +1,25 @@
+# getinc- Perl script to get the include path and the COG lib path.
+# R. Buck  4/6/05
+
+  $zz = system("which COGwhere.ss > zs1");
+  open(oneline,"zs1");
+  read(oneline,$zline,120);
+  close (oneline);
+  unlink ("zs1");
+  if ($zline =~/^no/)
+   { print " \n";
+     exit;
+   }
+  #print "zline = $zline\n";
+  @links = split(/\//,$zline);
+  #print "links = @links";
+  #print "number of links = $#links\n";
+  $#links =  $#links - 1;
+  $newlink = join("/",@links);
+  #print "revised links = $newlink\n";
+  $I =       $newlink."/usrdet/include";
+  $LIBPATH = $newlink."/usrdet/lib";
+  print "I = $I\n";
+  print "LIBPATH = $LIBPATH\n";
+  
+ 

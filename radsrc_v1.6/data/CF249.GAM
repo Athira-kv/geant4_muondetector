@@ -1,0 +1,69 @@
+c
+     Data file for  Cf-249 decay chain - atomic wt is 249.0748
+c    =========================================================
+c
+c    Parent gamma rays
+c    -----------------
+
+     There are    42 parent gamma rays
+c
+c    keV         Gamma (%)    +/-      Comment
+c    ----------  ---------  ---------  -----------------------
+       12.633      0.59       0.14     Cm Ll
+       14.939      8.9        1.9      Cm La
+       17.314      0.18       0.05     Cm Ln
+       19.158     10.4        2.5      Cm Lb
+       22.929      2.5        0.6      Cm Lg
+       37.501      0.0195     0.0011
+       42.872      0.033      0.002
+       54.65       0.026      0.007    
+       54.81       0.15       0.04     ?
+       54.95       0.026      0.026    intensity is upper limit
+       65.94       0.0178     0.0020
+       66.69       0.026      0.003
+       92.45       0.195      0.004
+      104.586      2.08       0.06     Cm Ka2
+      109.271      3.28       0.10     Cm Ka1
+      120.85       0.044      0.044    intensity is upper limit
+      121.5        0.045      0.003
+      123.059      1.20       0.04     Cm Kb1'
+      127.344      0.419      0.014    Cm Kb2'
+      198.19       0.0134     0.0016
+      229.32       0.0396     0.0020
+      241.06       0.192      0.004
+      252.998      2.47       0.05
+      255.54       0.043      0.007
+      266.82       0.36       0.11
+      267.36       0.0        0.0      intensity unknown      
+      295.870      0.136      0.006
+      321.47       0.066      0.003
+      333.51      14.4        0.3
+      388.32      66.         0.0      +/- unknown, reference intensity?
+      390.87       0.016      0.003
+      406.06       0.0108     0.0008
+      589.06       0.0024     0.0004
+      643.86       0.013      0.005
+      670.1        0.0007     0.00035  intensity approximate, ?
+      680.1        0.0046     0.0009   ?
+      701.93       0.0059     0.0012   ?
+      718.6        0.0084     0.0008   ?
+      740.1        0.0066     0.0013   ?
+      760.1        0.020      0.004    ?
+      770.1        0.026      0.013    intensity approximate, ?
+      990.1        0.0006     0.0003   intensity approximate, ?
+c    -----------------------------------------------------------
+c    Systematic uncertainty:   3.0 percent
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has   1 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+      Cf-249   CF249.GAM    NO_FILE     1.10640e+10   0.60   Alpha  1.0        0.0    Y
+      Cm-245   CM245.GAM    NO_FILE     2.68200E+11   1.18   Alpha  1.0        0.0    Y

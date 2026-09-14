@@ -1,0 +1,58 @@
+# Microsoft Developer Studio Generated Dependency File, included by radsrc.mak
+
+..\..\radsrc\bins.cc : \
+	"..\..\radsrc\bins.h"\
+	"..\..\radsrc\useroptions.h"\
+	
+
+..\..\radsrc\mcinput.cc : \
+	"..\..\libradsrc\batemansolution.h"\
+	"..\..\libradsrc\dbmanager.h"\
+	"..\..\libradsrc\decaycomputer.h"\
+	"..\..\libradsrc\decaymode.h"\
+	"..\..\libradsrc\isotope.h"\
+	"..\..\libradsrc\isotopedata.h"\
+	"..\..\libradsrc\isotopemix.h"\
+	"..\..\libradsrc\photoncomputer.h"\
+	"..\..\libradsrc\porting.h"\
+	"..\..\libradsrc\radsource.h"\
+	"..\..\libradsrc\radsrcerr.h"\
+	"..\..\radsrc\bins.h"\
+	"..\..\radsrc\mcinput.h"\
+	"..\..\radsrc\useriface.h"\
+	"..\..\radsrc\useroptions.h"\
+	
+
+..\..\radsrc\outputmci.cc : \
+	"..\..\radsrc\mcinput.h"\
+	
+
+..\..\radsrc\radsrc.cc : \
+	"..\..\libradsrc\batemansolution.h"\
+	"..\..\libradsrc\dbmanager.h"\
+	"..\..\libradsrc\decaycomputer.h"\
+	"..\..\libradsrc\decaymode.h"\
+	"..\..\libradsrc\isotope.h"\
+	"..\..\libradsrc\isotopedata.h"\
+	"..\..\libradsrc\isotopemix.h"\
+	"..\..\libradsrc\photoncomputer.h"\
+	"..\..\libradsrc\porting.h"\
+	"..\..\libradsrc\radsource.h"\
+	"..\..\libradsrc\radsrcerr.h"\
+	"..\..\radsrc\bins.h"\
+	"..\..\radsrc\mcinput.h"\
+	"..\..\radsrc\useriface.h"\
+	"..\..\radsrc\useroptions.h"\
+	
+
+..\..\radsrc\useriface.cc : \
+	"..\..\libradsrc\dbmanager.h"\
+	"..\..\libradsrc\decaymode.h"\
+	"..\..\libradsrc\isotope.h"\
+	"..\..\libradsrc\isotopedata.h"\
+	"..\..\libradsrc\isotopedb.h"\
+	"..\..\libradsrc\porting.h"\
+	"..\..\libradsrc\radsrcerr.h"\
+	"..\..\radsrc\useriface.h"\
+	"..\..\radsrc\useroptions.h"\
+	

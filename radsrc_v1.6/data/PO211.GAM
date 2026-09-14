@@ -1,0 +1,30 @@
+c
+     Data file for  Po-211 decay chain - atomic wt is 210.9866
+c    =========================================================
+c
+c    Parent gamma rays
+c    -----------------
+c
+     There are     3 parent gamma rays or X-rays
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   ----------------------------
+      328.08        0.0032    0.0011
+      569.150       0.534     0.0        Reference intensity?
+      897.23        0.52      0.03
+c    ----------------------------------------------------------------
+     Systematic uncertainty:   3.6 percent
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has   1 branch ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+      Po-211   PO211.GAM    NO_FILE     5.16000E-01   0.58   Alpha  1.000      0.0    Y
+      Pb-207   PB207.GAM    NO_FILE     0.00000E+00   0.0    Stable 1.000      0.0    Y

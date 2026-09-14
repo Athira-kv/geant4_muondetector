@@ -1,0 +1,51 @@
+c
+     Data file for  Cm-244 decay chain - atomic wt is 244.0627
+c    =========================================================
+c
+c    Parent gamma rays
+c    -----------------
+
+     There are    24 parent gamma rays or X-rays
+c
+c    keV         Gamma (%)    +/-        Comment
+c    ----------  ---------  ----------   -----------------------
+       12.124       0.23      0.12       Pu Ll, intensity approximate
+       14.262       4.        2.         Pu La, intensity approximate
+       16.333       0.09      0.05       Pu Ln, intensity approximate
+       18.135       4.        2.         Pu Lb, intensity approximate
+       21.554       1.0       0.5        Pu Lg, intensity approximate
+       42.817       0.025     0.013      intensity approximate
+       98.855       0.0015    0.0008     intensity approximate
+      152.622       0.00098   0.00010
+      251.43        1.21E-05  0.10E-05
+      263.33        5.7E-05   0.3E-05
+      289.17        8.E-09    8.E-09     intensity upper limit
+      302.96        1.54E-05  0.08E-05
+      340.70        3.E-08    3.E-08     intensity upper limit
+      507.22        7.6E-06   0.6E-06
+      554.54        7.9E-05   0.5E-05
+      597.35        4.5E-05   0.4E-05
+      606.07        7.2E-06   0.4E-06
+      758.64        1.53E-05  0.09E-05
+      817.87        6.7E-05   0.4E-05
+      857.50        6.1E-06   0.5E-06
+      895.24        2.E-08    2.E-08     intensity upper limit
+      900.31        1.7E-06   0.3E-06
+      916.04        3.E-07    3.E-07     intensity upper limit
+      938.05        6.E-07    6.E-07     intensity upper limit
+c    -----------------------------------------------------------
+c    Systematic uncertainty:  10.0 percent
+c
+c
+c    Decay chain and daughter information
+c    ------------------------------------
+c
+     This decay chain has   1 branches ------
+c
+c    Nuclide   Gamma Line   Brems'lung  Half Life            Branch Fraction
+c    Name      File Name    File Name         (sec) (%+/-)   (type)(fraction)(%+/-)  Add?
+c    -------   ----------   ----------  ------------------   ----------------------  ----  
+c
+     Branch 1:    2 members -----
+      Cm-244   CM244.GAM    NO_FILE     5.71510E+08   0.11   Alpha  1.000      0.0    Y
+      Pu-240   PU240.GAM    NO_FILE     2.07113E+11   0.11   Alpha  1.000      0.0    Y

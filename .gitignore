@@ -1,7 +1,16 @@
-build/
 *.log
 .nfs*
 *.root
 *.gas
 *.png
 *~
+
+# Ignore build folder contents by default, but allow subdirectories
+build/*
+!build/
+
+# Exclude specific file types inside build
+build/**/*.csv
+build/**/*.txt
+build/**/*.py
+.nfs*
